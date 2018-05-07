@@ -8,19 +8,16 @@ body {
     font-size: 16px; 
     line-height: 32px;
     font-family: sans-serif;
-    color: black;
 }
 
 h1 {
     font-size: 30px;
-    color: skyblue;
 }
 
 h2 {
     font-size: 25px;
     text-align: center;
     border-style: solid;
-    border-color: skyblue
 }
 
 ul {
@@ -31,13 +28,16 @@ ul {
 header, main, footer {
     /*margin: 1.25rem auto;*/
     padding: .5rem;
-    max-width:;
+    max-width:900px;
 }
 
 header, footer, footer a {
     text-align: center;
-    background-color: darkgray;
-    color: whitesmoke;
+    background-color: lightcyan;
+}
+
+body, h1, h2, header, footer,footer a {
+    color: darkslateblue
 }
 
 header img {
