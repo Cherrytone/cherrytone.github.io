@@ -6,6 +6,8 @@
     
     section.forecast {display: none; }  /* show the 10-day forecast with the medium view and up */
     
+    table {display: none;}
+    
     nav {display: none;}
     
     article {display: none;}

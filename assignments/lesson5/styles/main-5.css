@@ -34,6 +34,7 @@ nav {
     background-color: cadetblue;
     text-align: center;
     font-size: 25px;
+    padding: 2px;
 }
 nav button {}
 nav ul {
@@ -64,13 +65,14 @@ main > img {
 .weather-summary {
     background: cadetblue;
     color: aliceblue;
-    text-align: center; 
+    text-align: center;
+    padding: 1px;
 }
 .forecast {
     background-color: aliceblue;
     text-align: center;
     color: cadetblue;
-    padding-bottom: 1em;
+    padding: 1px;
 }
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
@@ -84,15 +86,21 @@ table , th, td {
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1em;
 }
 tr {
     height: 10px;
+}   
+.content{
+    display: flex
 }
-.row, .column{
+.first, .second{
+    margin: auto
+}
+}
+footer > section{
+    text-align: center;
     padding: 1em;
-    max-width: 900px;
-    
 }
-footer {}
     
 }
