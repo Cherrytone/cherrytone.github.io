@@ -11,5 +11,10 @@
     nav {display: none;}
     
     article {display: none;}
+    
+    .weather-summary > picture > img{
+        position: static;
+        width: 75%;
+    
 
   }
