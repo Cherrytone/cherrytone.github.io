@@ -3,4 +3,9 @@
     .second{
         display: none;
     }
+    
+    header, nav, main, footer, table { 
+      max-width: 75%;
+      margin: auto;
+    }
   }
