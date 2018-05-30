@@ -15,8 +15,8 @@ header {
     text-align: center;
     color: cadetblue;    
 }
-header, nav {
-    font-family: Georgia;
+header, nav, footer, .weather-summary, .forecast, h3 {
+    font-family: 'Muli', sans-serif;
 }
 header h1 {
     font-size: 3em;
@@ -97,10 +97,19 @@ tr {
     height: 10px;
 }   
 .content{
-    display: flex
+    display: flex;
 }
 .first, .second{
-    margin: auto
+    max-width: 400px;
+}
+.frist > h3, .
+}
+.photo{
+    float: left;
+}
+/*Article Body Font */
+.town-article{
+    font-family: 'Lora', serif;
 }
 footer > section{
     text-align: center;
