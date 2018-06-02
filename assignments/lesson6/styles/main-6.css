@@ -84,8 +84,8 @@ table , th, td {
     border: 2px solid cadetblue;
     border-collapse: collapse;
     text-align: center;
-    padding-left: 1em;
-    padding-right: 1em;
+    /*padding-left: 1em;*/
+    /*padding-right: 1em;*/
     position: relative;
     margin-left: auto;
     margin-right: auto;
