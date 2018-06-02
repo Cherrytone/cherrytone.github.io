@@ -10,7 +10,7 @@
       max-width: 50%;
       margin: auto;
     }
-        
+    
     table {display: none;}
     
     nav {display: none;}
@@ -20,6 +20,6 @@
     .weather-summary > picture > img{
         position: static;
         width: 75%;
-    
+    }
 
   }
