@@ -12,8 +12,7 @@ header, nav, main, footer {
   margin: auto;
 }
 header {
-    text-align: center;
-    color: cadetblue;    
+    color: cadetblue;
 }
 header, nav, footer, .weather-summary, .forecast, h3 {
     font-family: 'Muli', sans-serif;
@@ -21,11 +20,20 @@ header, nav, footer, .weather-summary, .forecast, h3 {
 header h1 {
     font-size: 3em;
 }
-header h1 h2 {
-    color: cadetblue;
+
+h1, h2{
+    text-align: left;
+    margin-left: 225px;
 }
-header img {}
-header .subheading {}
+header img {
+    position: absolute;
+    float: left;
+    padding-right:;
+}
+
+.subheading {
+    text-align: center;
+}
 
 nav {
     background-color: cadetblue;
@@ -33,7 +41,6 @@ nav {
     font-size: 25px;
     padding: 2px;
 }
-nav button {}
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -54,7 +61,6 @@ nav ul li.active a {
 nav ul li a:hover {
     background-color: skyblue;
 }
-main {}
 main > img {
     width: 100%; 
 }
@@ -79,7 +85,6 @@ main > img {
     color: cadetblue;
     padding: 1px;
 }
-main h2 {}
 table , th, td {
     border: 2px solid cadetblue;
     border-collapse: collapse;
@@ -103,7 +108,11 @@ tr {
 }
 .frist > h3, .
 }
-.photo{
+.photo {
+    position: absolute;
+    float: right;
+}
+.town-article{
     float: left;
 }
 /*Article Body Font */
@@ -111,6 +120,5 @@ tr {
     font-family: 'Lora', serif;
 }
 footer > section{
-    text-align: center;
     padding: 1em;
 }
