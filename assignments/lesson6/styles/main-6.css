@@ -7,7 +7,7 @@ body {
 main > img, .forecast, .weather-summary{
     box-shadow:0px 3px 3px gray;
 }
-header, nav, main, footer { 
+header, nav, main { 
   max-width: 900px;
   margin: auto;
 }
@@ -21,7 +21,7 @@ header h1 {
     font-size: 3em;
 }
 
-h1, h2{
+header > h1, h2{
     text-align: left;
     margin-left: 225px;
 }
@@ -106,16 +106,14 @@ tr {
     max-width: 400px;
 }
 .photo {
-    position: absolute;
     float: right;
 }
-.town-article{
-    float: left;
-}
+
 /*Article Body Font */
 .town-article{
     font-family: 'Lora', serif;
 }
-footer > section{
-    padding: 1em;
+footer {
+    text-align: center;
+    
 }
