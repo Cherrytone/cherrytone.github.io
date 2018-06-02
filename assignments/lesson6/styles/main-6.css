@@ -28,7 +28,6 @@ h1, h2{
 header img {
     position: absolute;
     float: left;
-    padding-right:;
 }
 
 .subheading {
@@ -105,8 +104,6 @@ tr {
 }
 .first, .second{
     max-width: 400px;
-}
-.frist > h3, .
 }
 .photo {
     position: absolute;
