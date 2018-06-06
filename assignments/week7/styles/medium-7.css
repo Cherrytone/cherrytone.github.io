@@ -1,0 +1,25 @@
+@media only screen and (max-width: 600px) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    
+    nav button { display:contents; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    section.forecast {display: none; }  /* show the 10-day forecast with the medium view and up */
+    
+    header, nav, main, footer, table { 
+      max-width: 50%;
+      margin: auto;
+    }
+    
+    table {display: none;}
+    
+    nav {display: none;}
+    
+    article {display: none;}
+    
+    .weather-summary > picture > img{
+        position: static;
+        width: 75%;
+    }
+
+  }

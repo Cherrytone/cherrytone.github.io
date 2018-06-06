@@ -1,0 +1,116 @@
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family:  Trebuchet MS;
+}
+main > img, .forecast, .weather-summary{
+    box-shadow:0px 3px 3px gray;
+}
+header, nav, main { 
+  max-width: 900px;
+  margin: auto;
+}
+header {
+    color: cadetblue;
+}
+header, nav, footer, .weather-summary, .forecast, h3 {
+    font-family: 'Muli', sans-serif;
+}
+header h1 {
+    font-size: 3em;
+}
+
+header > h1, header > h2{
+    text-align: left;
+    margin-left: 225px;
+}
+header img {
+    position: absolute;
+    float: left;
+}
+
+.subheading {
+    text-align: center;
+}
+
+nav {
+    background-color: cadetblue;
+    text-align: center;
+    font-size: 25px;
+    padding: 2px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li {
+    display: inline;
+    padding: 2px;
+}
+nav ul li a {
+    color: aliceblue;
+    padding: 16px;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: aqua;
+}
+nav ul li a:hover {
+    background-color: skyblue;
+}
+main > img {
+    width: 100%; 
+}
+.weather-summary {
+    background: cadetblue;
+    color: aliceblue;
+    text-align: center;
+    padding: 1px;
+    position: relative;
+}
+.weather-summary > picture > img{
+    position: absolute;
+    padding: 1em;
+    width: 30%;
+    left: 55px;
+    top: 2em;
+    
+}
+.forecast {
+    background-color: aliceblue;
+    text-align: center;
+    color: cadetblue;
+    padding: 1px;
+}
+table , th, td {
+    border: 2px solid cadetblue;
+    border-collapse: collapse;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    max-width: 900px;
+}
+th, td {
+    padding:8px
+}
+.content{
+    display: flex;
+}
+.photo {
+    float: right;
+    width: 50%;
+}
+
+/*Article Body Font */
+.town-article{
+    font-family: 'Lora', serif;
+}
+footer {
+    text-align: center;
+    
+}
