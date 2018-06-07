@@ -38,19 +38,18 @@ nav {
     padding: 2px;
 }
 nav ul {
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 nav ul li {
-    display: flex;
-    flex-direction: row;
-    padding: 2px;
+    padding: 10px;
 }
 nav ul li a {
     color: aliceblue;
-    padding: 16px;
+    padding: 5px;
     text-decoration: none;
 }
 nav ul li.active a {
@@ -99,9 +98,10 @@ th, td {
 .content{
     display: flex;
 }
-.photo {
+.first > picture img, .second > picture > img {
+    flex-direction: row;
     float: right;
-    width: 50%;
+    padding: 10px;
 }
 
 /*Article Body Font */
