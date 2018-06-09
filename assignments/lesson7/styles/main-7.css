@@ -37,9 +37,9 @@ header img {
 /*-----NAVIGATION-----*/
 nav {
     background-color: cadetblue;
-    text-align: center;
     font-size: 25px;
     padding: 2px;
+    text-align: center;
 }
 nav ul {
     display: flex;
@@ -131,7 +131,4 @@ footer {
 }
 .one > p {
     padding: 5px;
-}
-.one >img, .one > p {
-    hover: boc
 }
