@@ -23,9 +23,6 @@
         flex-direction: column;
         text-align: center;
     }
-    .gallery {
-    display: grid;
-}
     
     .one:hover {
     box-shadow: none;
