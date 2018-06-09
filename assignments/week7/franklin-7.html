@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
         <title>Frankline City - Hope Weather</title>
     </head>
-    <body>
+    <body onload="windchill()">
 
         <header>
             <img id="logo" src="images/logo5.png" alt="Hope weather with sun logo">
@@ -43,12 +43,13 @@
                         <img src="images/500pxsunny.jpg" alt="sun rays filling the sky">
                     </picture>
                 <div class="highlow">
-                    <p>High: 90&#x2109;</p>  
-                    <p>Low: 66&#x2109;</p>  
+                    <p>High: <span id="high">90</span>&#x2109;</p>  
+                    <p>Low: <span id="low">66</span>&#x2109;</p>  
                 </div>    
                 <div class="conditions">
                     <p>Precipitation: 0&percnt;</p>  
-                    <p>Wind Speed: 5 mph SW</p>  
+                    <p>Wind Speed: <span id="wind">5</span>mph SW</p>
+                    <p>Wind Chill Temp: <span id="windchill"></span>&#x2109;</p>
                 </div>           
             </section>
         
@@ -120,6 +121,7 @@
   </footer>
 <script src="script/moment.min.js"></script>
 <script src="script/currentdate.js"></script>
+<script src="script/windchill.js"></script>
 
 
 
