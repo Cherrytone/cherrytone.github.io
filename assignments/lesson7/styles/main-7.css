@@ -12,7 +12,7 @@ main > img {
     width: 100%; 
 }
 /*-----MULTI-----*/
-header, main { 
+header, nav, main { 
   max-width: 75%;
   margin: auto;
 }
@@ -39,12 +39,11 @@ nav {
     background-color: cadetblue;
     font-size: 25px;
     padding: 2px;
-    max-width: 75%;
-    margin: 0;
 }
 nav ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     list-style-type: none;
