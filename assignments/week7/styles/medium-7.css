@@ -13,13 +13,21 @@
     
     table {display: none;}
     
-    nav {display: none;}
-    
     article {display: none;}
     
     .weather-summary > picture > img{
         position: static;
         width: 75%;
     }
-
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .gallery {
+    display: grid;
+}
+    
+    .one:hover {
+    box-shadow: none;
+}
   }

@@ -8,4 +8,7 @@
       max-width: 75%;
       margin: auto;
     }
+    .gallery {
+    grid-template-columns: 1fr 1fr;
+    }
   }

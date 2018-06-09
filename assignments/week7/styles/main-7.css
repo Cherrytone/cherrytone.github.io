@@ -4,25 +4,28 @@ body {
   font-size: 16px;
   font-family:  Trebuchet MS;
 }
+/*-----MAIN-----*/
 main > img, .forecast, .weather-summary{
     box-shadow:0px 3px 3px gray;
 }
-header, nav, main { 
-  max-width: 900px;
-  margin: auto;
+main > img {
+    width: 100%; 
 }
-header {
-    color: cadetblue;
+/*-----MULTI-----*/
+header, nav, main { 
+  max-width: 75%;
+  margin: auto;
 }
 header, nav, footer, .weather-summary, .forecast, h3 {
     font-family: 'Muli', sans-serif;
 }
+/*-----HEADER-----*/
+header {
+    color: cadetblue;
+}
 header h1 {
     font-size: 3em;
 }
-
-
-
 header > h1, header > h2, header > .subheading{
     text-align: center;
     margin: 5px;
@@ -31,6 +34,7 @@ header img {
     float: left;
     padding: 5px;
 }
+/*-----NAVIGATION-----*/
 nav {
     background-color: cadetblue;
     text-align: center;
@@ -58,24 +62,19 @@ nav ul li.active a {
 nav ul li a:hover {
     background-color: skyblue;
 }
-main > img {
-    width: 100%; 
-}
+/*-----WEATHER SUMMARY-----*/
 .weather-summary {
+    display: flex;
+    flex-direction: column;
     background: cadetblue;
     color: aliceblue;
     text-align: center;
-    padding: 1px;
 }
 .weather-summary > picture > img{
-    display: flex;
-    flex-wrap: wrap;
     padding: 1em;
-    width: 30%;
-    /*left: 55px;*/
-    /*top: 2em;*/
-    
+    max-width: 75%;
 }
+/*-----TABLE-----*/
 .forecast {
     background-color: aliceblue;
     text-align: center;
@@ -86,17 +85,17 @@ table , th, td {
     border: 2px solid cadetblue;
     border-collapse: collapse;
     text-align: center;
-    position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1em;
-    max-width: 900px;
 }
 th, td {
     padding:8px
 }
+/*-----ARTICLES-----*/
 .content{
     display: flex;
+    padding: 5px; 
 }
 .first > picture img, .second > picture > img {
     flex-direction: row;
@@ -108,7 +107,31 @@ th, td {
 .town-article{
     font-family: 'Lora', serif;
 }
+/*-----FOOTER-----*/
 footer {
+    text-align: center;   
+}
+/*-----GALLERY-----*/
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.one {
+    border: 2px solid cadetblue;
+    border-radius: 5%;
     text-align: center;
-    
+}
+.one:hover {
+    box-shadow: 4px 4px 10px cadetblue;
+}
+.one > img { 
+    padding: 10px;
+    max-width: 100%;
+}
+.one > p {
+    padding: 5px;
+}
+.one >img, .one > p {
+    hover: boc
 }
