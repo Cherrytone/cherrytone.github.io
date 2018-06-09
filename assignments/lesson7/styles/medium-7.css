@@ -23,8 +23,14 @@
         flex-direction: column;
         text-align: center;
     }
-    
     .one:hover {
-    box-shadow: none;
+        box-shadow: none;
+    }
+    .subheading {
+        display: none;
+    }
+    header img {
+        float: none;
 }
-  }
+}
+    
