@@ -34,66 +34,81 @@
     
         <main>
             <form>
-                <div class="personal_data">
-                    <h3>Personal Information</h3>
-                    Full Name:<br>
-                    <input type="text" name="fullname" pattern="[A-Za-z]{5}" required>
-                    <br>
-                    Email:<br>
-                    <input type="email" name="email" placeholder="weather@center.com">
-                    <br>
-                    Phone Number:<br>
-                    <input type="tel" name="phone_number" required>
-                    <br>
-                    Zip Code:<br>
-                    <input id="zip" type="number" name="zipcode" required>
-                    <br>
-                </div>
-                <div class="storm_info">
-                    <h3>Storm Information</h3>
-                    Date of Storm:<br>
-                    <input type="date" name="storm_date">
-                    <br>
-                    Type of Storm:<br>
-                    <input list="storm" name="storm_type">
-                        <datalist id="storm">
-                            <option value="Flash Flood">
-                            <option value="Hail">
-                            <option value="Hurricane">
-                            <option value="Thunderstorm">
-                            <option value="Tornado">
-                            <option value="Rain">
-                            <option value="Snow">
-                        </datalist>
-                    <br>
-                    Severity of Storm:<span id="ratingvalue">5</span><br><br>
-                    <label for="rating">(1)</label>
-                    <input type="range" id="rating" name="severity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <label for="rating">(10)</label>
-                    <br>
-                    Region of Storm:<br>
-                    <select>
-                        <option value="select" disabled selected>Select Region</option>
-                        <option value="franklin">Franklin</option>
-                        <option value="greenville">Greenville</option>
-                        <option value="springfield">Springfield</option>
-                    </select>
-                    <br>
-                    In Danger:<br>
-                    <input type="radio" name="danger_level" value="yes"> YES<br>
-                    <input type="radio" name="danger_level" value="maybe">Maybe<br>
-                    <input type="radio" name="danger_level" value="no"> No<br>
-                </div>
-                <div class="notes">
-                    <h3>Additional Information</h3>
-                    Optional Notes:<br>
-                        <textarea rows="10" cols="30"></textarea>
-                    <br>
-                    Submit From: <input type="submit" name="submit" onclick="thankYou()">
-                </div>
-                
-                
-                
+                <fieldset>
+                    <legend>Personal Information</legend>
+                        <div class="inner_box">
+                            <label class="title">Full Name:</label>
+                            <input type="text" name="fullname" pattern="[A-Za-z]{5}" required>
+                            <br>
+                            <label class="title">Email:</label>
+                            <input type="email" name="email" placeholder="weather@center.com">
+                            <br>
+                            <label class="title">Phone Number:</label>
+                            <input type="tel" name="phone_number" required>
+                            <br>
+                            <label class="title">Zip Code:</label>
+                            <input id="zip" type="number" name="zipcode" required>
+                            <br>
+                        </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Information</legend>
+                        <div class="inner_box">
+                            <label class="title">Date of Storm:</label>
+                            <input type="date" name="storm_date">
+                            <br>
+                            <label class="title">Type of Storm:</label>
+                            <input list="storm" name="storm_type">
+                                <datalist id="storm">
+                                    <option value="Flash Flood">
+                                    <option value="Hail">
+                                    <option value="Hurricane">
+                                    <option value="Thunderstorm">
+                                    <option value="Tornado">
+                                    <option value="Rain">
+                                    <option value="Snow">
+                                </datalist>
+                            <br>
+                            <label class="title">Severity of Storm:<span id="ratingvalue"> 5</span><br>
+                            <label class="key" for="rating">(1)</label>
+                            <input type="range" id="rating" name="severity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <label class="key" for="rating">(10)</label>
+                            <br>
+                            </label>
+                            <label class="title">Region of Storm:</label>
+                            <select>
+                                <option value="select" disabled selected>Select Region</option>
+                                <option value="franklin">Franklin</option>
+                                <option value="greenville">Greenville</option>
+                                <option value="springfield">Springfield</option>
+                            </select>
+                            <br>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Immediate Danger</legend>
+                        <div class="additional">
+                            <label class="title">In Danger:</label>
+                                <div class="radio-group">
+                                    <input class="small" type="radio" name="danger_level" value="yes"> YES<br>
+                                    <input class="small" type="radio" name="danger_level" value="maybe">Maybe<br>
+                                    <input class="small" type="radio" name="danger_level" value="no"> No<br>
+                                </div>
+                        </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                        <div class="additional">
+                            Optional Notes:<br>
+                            <textarea rows="10" cols="30"></textarea><br>
+                        </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Submit Form</legend>
+                        <div class="additional">
+                            <input class="button" type="submit" name="submit" onclick="thankYou()">
+                        </div>
+                </fieldset> 
             </form>
             
     </main>

@@ -110,7 +110,10 @@ th, td {
 }
 /*-----FOOTER-----*/
 footer {
-    text-align: center;   
+    text-align: center;
+    background-color: cadetblue;
+    padding: 5px;
+    margin: 5px;
 }
 /*-----GALLERY-----*/
 .gallery {
@@ -134,8 +137,51 @@ footer {
     padding: 5px;
 }
 /*-----------STORM CENTER--------------*/
-form {
+label{
+    display: block;
+}
+input{
+    width: 75%;
+}
+.small{
+    width: inherit;
+}
+fieldset{
+    border: 3px solid cadetblue;
+    padding-bottom: 10px;
+    margin: 5px;
+}
+.key{
+    display: inline;
+}
+legend{
+    font-size: 20px;
+    color: cadetblue;
+    font-weight: bolder;
+}
+span{
+    padding: 5px;
+}
+.inner_box{
+    margin: 25px;
+}
+label, input{
+    padding: 2px;
+    margin: 5px;
+}
+.title{
+    font-size: 20px;
+    color: cadetblue;
+}
+.radio-group{
+    text-align: left;
+    display:inline-block
+}
+.additional{
     text-align: center;
+}
+.button{
+    width: auto;
 }
 
 /*Takes away spinner from number input field*/
