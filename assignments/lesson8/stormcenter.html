@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
         <title>Frankline City - Hope Weather</title>
     </head>
-    <body onload="windchill()">
+    <body>
 
         <header>
             <img id="logo" src="images/logo5.png" alt="Hope weather with sun logo">
@@ -24,15 +24,77 @@
             <nav>
                 <ul>
     	           <li><a href="#">Home</a></li>
-    	           <li><a href="franklin-7.html">Franklin</a></li>
+    	           <li><a href="franklin-8.html">Franklin</a></li>
     	           <li><a href="#">Greenville</a></li>
     	           <li><a href="#">Springfield</a></li>
     	           <li><a href="stormcenter.html">Storm Center</a></li>
-    	           <li><a href="gallery-7.html">Gallery</a></li>
+    	           <li><a href="gallery-8.html">Gallery</a></li>
                 </ul>		
             </nav>
     
         <main>
+            <form>
+                <div class="personal_data">
+                    <h3>Personal Information</h3>
+                    Full Name:<br>
+                    <input type="text" name="fullname" pattern="[A-Za-z]{5}" required>
+                    <br>
+                    Email:<br>
+                    <input type="email" name="email" placeholder="weather@center.com">
+                    <br>
+                    Phone Number:<br>
+                    <input type="tel" name="phone_number" required>
+                    <br>
+                    Zip Code:<br>
+                    <input id="zip" type="number" name="zipcode" required>
+                    <br>
+                </div>
+                <div class="storm_info">
+                    <h3>Storm Information</h3>
+                    Date of Storm:<br>
+                    <input type="date" name="storm_date">
+                    <br>
+                    Type of Storm:<br>
+                    <input list="storm" name="storm_type">
+                        <datalist id="storm">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                            <option value="Rain">
+                            <option value="Snow">
+                        </datalist>
+                    <br>
+                    Severity of Storm:<span id="ratingvalue">5</span><br><br>
+                    <label for="rating">(1)</label>
+                    <input type="range" id="rating" name="severity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <label for="rating">(10)</label>
+                    <br>
+                    Region of Storm:<br>
+                    <select>
+                        <option value="select" disabled selected>Select Region</option>
+                        <option value="franklin">Franklin</option>
+                        <option value="greenville">Greenville</option>
+                        <option value="springfield">Springfield</option>
+                    </select>
+                    <br>
+                    In Danger:<br>
+                    <input type="radio" name="danger_level" value="yes"> YES<br>
+                    <input type="radio" name="danger_level" value="maybe">Maybe<br>
+                    <input type="radio" name="danger_level" value="no"> No<br>
+                </div>
+                <div class="notes">
+                    <h3>Additional Information</h3>
+                    Optional Notes:<br>
+                        <textarea rows="10" cols="30"></textarea>
+                    <br>
+                    Submit From: <input type="submit" name="submit" onclick="thankYou()">
+                </div>
+                
+                
+                
+            </form>
             
     </main>
     
@@ -48,7 +110,7 @@
   </footer>
 <script src="script/moment.min.js"></script>
 <script src="script/currentdate.js"></script>
-<script src="script/windchill.js"></script>
+<script src="script/stormcenter.js"></script>
 
 
 

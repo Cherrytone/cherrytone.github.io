@@ -133,3 +133,14 @@ footer {
 .one > p {
     padding: 5px;
 }
+/*-----------STORM CENTER--------------*/
+form {
+    text-align: center;
+}
+
+/*Takes away spinner from number input field*/
+#zip::-webkit-outer-spin-button,
+#zip::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
