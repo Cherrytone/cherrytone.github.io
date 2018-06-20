@@ -1,0 +1,192 @@
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family:  Trebuchet MS;
+}
+/*-----MAIN-----*/
+main > img, .forecast, .weather-summary{
+    box-shadow:0px 3px 3px gray;
+}
+main > img {
+    width: 100%; 
+}
+/*-----MULTI-----*/
+header, nav, main { 
+  max-width: 75%;
+  margin: auto;
+}
+header, nav, footer, .weather-summary, .forecast, h3 {
+    font-family: 'Muli', sans-serif;
+}
+/*-----HEADER-----*/
+header {
+    color: cadetblue;
+}
+header h1 {
+    font-size: 3em;
+}
+header > h1, header > h2, header > .subheading{
+    text-align: center;
+    margin: 5px;
+}
+header img {
+    float: left;
+    padding: 10px;
+}
+/*-----NAVIGATION-----*/
+nav {
+    background-color: cadetblue;
+    font-size: 25px;
+    padding: 2px;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+}
+nav ul li {
+    padding: 10px;
+}
+nav ul li a {
+    color: aliceblue;
+    padding: 5px;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: aqua;
+}
+nav ul li a:hover {
+    background-color: skyblue;
+}
+/*-----WEATHER SUMMARY-----*/
+.weather-summary {
+    display: flex;
+    flex-direction: column;
+    background: cadetblue;
+    color: aliceblue;
+    text-align: center;
+}
+.weather-summary > picture > img{
+    padding: 1em;
+    max-width: 75%;
+}
+/*-----TABLE-----*/
+.forecast {
+    background-color: aliceblue;
+    text-align: center;
+    color: cadetblue;
+    padding: 1px;
+}
+table , th, td {
+    border: 2px solid cadetblue;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+th, td {
+    padding:8px
+}
+/*-----ARTICLES-----*/
+.content{
+    display: flex;
+    padding: 5px; 
+}
+.first > picture img, .second > picture > img {
+    flex-direction: row;
+    float: right;
+    padding: 10px;
+}
+
+/*Article Body Font */
+.town-article{
+    font-family: 'Lora', serif;
+}
+/*-----FOOTER-----*/
+footer {
+    text-align: center;
+    background-color: cadetblue;
+    padding: 5px;
+    margin: 5px;
+}
+/*-----GALLERY-----*/
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.one {
+    border: 2px solid cadetblue;
+    border-radius: 5%;
+    text-align: center;
+}
+.one:hover {
+    box-shadow: 4px 4px 10px cadetblue;
+}
+.one > img { 
+    padding: 10px;
+    max-width: 100%;
+}
+.one > p {
+    padding: 5px;
+}
+/*-----------STORM CENTER--------------*/
+label{
+    display: block;
+}
+input{
+    width: 75%;
+}
+.small{
+    width: inherit;
+}
+fieldset{
+    border: 3px solid cadetblue;
+    padding-bottom: 10px;
+    margin: 5px;
+}
+.key{
+    display: inline;
+}
+legend{
+    font-size: 20px;
+    color: cadetblue;
+    font-weight: bolder;
+}
+span{
+    padding: 5px;
+}
+.inner_box{
+    margin: 25px;
+}
+label, input{
+    padding: 2px;
+    margin: 5px;
+}
+.title{
+    font-size: 20px;
+    color: cadetblue;
+}
+.radio-group{
+    text-align: left;
+    display:inline-block
+}
+.additional{
+    text-align: center;
+}
+.button{
+    width: auto;
+}
+
+/*Takes away spinner from number input field*/
+#zip::-webkit-outer-spin-button,
+#zip::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

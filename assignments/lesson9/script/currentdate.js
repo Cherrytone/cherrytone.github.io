@@ -1,0 +1,1 @@
+document.getElementById("currentdate").innerHTML = moment().format("dddd, D MMMM YYYY");          
