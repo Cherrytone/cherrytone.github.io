@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
         <title>Frankline City - Hope Weather</title>
     </head>
-    <body onload="franklin()">
+    <body onload="franklinWeather()">
 
         <header>
             <img id="logo" src="images/logo5.png" alt="Hope weather with sun logo">
@@ -35,22 +35,17 @@
         <main>
             <img src="images/900pxdawn.jpg" alt="river bank at dawn with clouds and green grass">
             <section class="weather-summary">
-                <h2>Weather Summary</h2>
-                <div class="current">
-                    Sunny  
-                </div>  
+                <h2>Weather Summary</h2> 
                 <picture>
                         <img src="images/500pxsunny.jpg" alt="sun rays filling the sky">
                     </picture>
                 <div class="highlow">
                     <p>Current Temp: <span id="current_temp"></span>&#x2109;</p>
-                    <p>High: <span id="high"></span>&#x2109;</p>  
-                    <p>Low: <span id="low"></span>&#x2109;</p>  
+                    <p><img id="icon" src=""></p>
                 </div>    
                 <div class="conditions">
-                    <p>Precipitation:<span id="prec"></span>&percnt;</p>  
+                    <p>Sky Condition:<span id="sky"></span></p>  
                     <p>Wind Speed: <span id="wind"></span>mph SW</p>
-                    <p>Wind Chill Temp: <span id="windchill"></span>&#x2109;</p>
                 </div>           
             </section>
         
