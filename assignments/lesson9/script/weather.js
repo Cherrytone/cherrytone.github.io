@@ -44,7 +44,7 @@ function franklinWeather(){
         let weatherData = JSON.parse(weatherRequest.responseText);
         console.log(weatherData);
         var icon = weatherData.weather[0].icon;
-        let iconSrc = "http://openweathermap.org/img/w/"+icon+".png";
+        let iconSrc = "https://openweathermap.org/img/w/"+icon+".png";
         document.getElementById("current_temp").innerHTML = weatherData.main.temp;
         document.getElementById("icon").setAttribute("src", iconSrc); 
         document.getElementById("sky").innerHTML = weatherData.weather[0].description;
