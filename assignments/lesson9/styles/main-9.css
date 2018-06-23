@@ -68,15 +68,12 @@ nav ul li a:hover {
     display:
     max-width: 75%;
     padding: 5px;
+}
+.city_info {
     border: 2px solid cadetblue;
     border-radius: 5%;
     padding: 10px;
 }
-h1:nth-child(1){
-    border: 2px solid red;
-}
-.city_info {
-    
 .city_info:hover {
     box-shadow: 4px 4px 10px cadetblue;
 }
