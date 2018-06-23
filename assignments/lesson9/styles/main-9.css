@@ -63,6 +63,21 @@ nav ul li.active a {
 nav ul li a:hover {
     background-color: skyblue;
 }
+/*------Home Page--------*/
+.city{
+    max-width: 75%;
+    padding: 5px;
+}
+.city_info {
+    border: 2px solid cadetblue;
+    border-radius: 5%;
+    padding: 10px;
+}
+.city_info:hover {
+    box-shadow: 4px 4px 10px cadetblue;
+}
+/*-----City Pages---------*/
+
 /*-----WEATHER SUMMARY-----*/
 .weather-summary {
     display: flex;
