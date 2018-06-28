@@ -1,6 +1,6 @@
 fuction navActivate(){
-    var header = document.getElementById("myDIV");
-    var btns = header.getElementsByClassName("btn");
+    var header = document.getElementById("nav_tabs");
+    var btns = header.getElementsByClassName("tabs");
     for (var i = 0; i < btns.length; i++) {
           btns[i].addEventListener("click", function() {
             var current = document.getElementsByClassName("active");
