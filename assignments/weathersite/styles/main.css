@@ -12,7 +12,7 @@ main > img {
     width: 100%; 
 }
 /*-----MULTI-----*/
-header, nav, main { 
+header, nav, main, #footer { 
   max-width: 75%;
   margin: auto;
 }
@@ -127,6 +127,7 @@ th, td {
     font-family: 'Lora', serif;
 }
 /*-----FOOTER-----*/
+
 footer {
     text-align: center;
     background-color: cadetblue;
