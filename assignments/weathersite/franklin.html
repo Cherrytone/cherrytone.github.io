@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Franklin City Weather page within the Hope Weather site">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <title>Frankline City - Hope Weather</title>
+    </head>
+    <body onload="franklinWeather()">
+
+        <header>
+            <img id="logo" src="images/larger_spot_weather-01-01.png" alt="On the Spot Weather logo">
+        </header>
+
+            <nav>
+                <ul>
+    	           <li><a href="index.html">Home</a></li>
+    	           <li><a href="franklin.html">Franklin</a></li>
+    	           <li><a href="#">Greenville</a></li>
+    	           <li><a href="#">Springfield</a></li>
+    	           <li><a href="stormcenter.html">Storm Center</a></li>
+    	           <li><a href="gallery.html">Gallery</a></li>
+                </ul>		
+            </nav>
+    
+        <main>
+            <div class="cityLabel">
+                <h1 class="pageTitle">Franklin City Page</h1>
+                <h3 class="tagline">Where you will grow!</h3>
+            </div>
+            <img src="images/900pxdawn.jpg" alt="river bank at dawn with clouds and green grass">
+            <section class="weather-summary">
+                <h2>Weather Summary</h2> 
+                <div class="highlow">
+                    <p>Current Temp: <span id="current_temp"></span>&#x2109;</p>
+                    <p><img id="icon" src=""></p>
+                </div>    
+                <div class="conditions">
+                    <p>Sky Condition:<span id="sky"></span></p>  
+                    <p>Wind Speed: <span id="wind"></span>mph SW</p>
+                </div>           
+            </section>
+        
+            <section class="forecast">
+                <h3>Ten Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Day 1</th>
+                        <th scope="col">Day 2</th>
+                        <th scope="col">Day 3</th>
+                        <th scope="col">Day 4</th>
+                        <th scope="col">Day 5</th>
+                        <th scope="col">Day 6</th>
+                        <th scope="col">Day 7</th>
+                        <th scope="col">Day 8</th>
+                        <th scope="col">Day 9</th>
+                        <th scope="col">Day 10</th>
+                    </tr>
+	           </thead>
+                <tbody>  
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+	           </tbody>
+            </table>
+            </section>
+        <div class="content">
+            <article class="first">
+                <h3>Franklin Breaks Record</h3>
+                <picture>
+                    <img class="photo" src="images/roads300px.jpg" alt="city highway at night with city lights">
+                </picture>
+                <p class="town-article">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                </p>
+            </article>
+            <article class="second">
+                <h3>Another Local Article</h3>
+                <picture>
+                    <img class="photo" src="images/park300px.jpg" alt="group of people sitting on a grassy hill in a park">
+                </picture>
+                <p class="town-article">
+                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                </p>
+            </article>
+        </div>
+  
+    </main>
+    
+    <footer>
+        <div class="contact">
+          <p>CREDIT <a href="https://openweathermap.org/">OPENWEATHERMAP</a> FOR WEATHER DATA SOURCE</p>    
+          Contact information placeholder
+          999.999.9999
+          123 Main St. Anytown, US 99999
+          Google Map
+        </div>
+        <div class="footer-bar">&copy;2018 | All Rights Reserved | Hope Weather | <span id="currentdate">Current Date Placeholder</span>
+        </div>
+  </footer>
+<script src="script/moment.min.js"></script>
+<script src="script/currentdate.js"></script>
+<script src="script/weather.js"></script>
+
+
+
+
+</body>
+</html>
