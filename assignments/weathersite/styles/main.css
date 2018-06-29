@@ -68,7 +68,7 @@ nav ul li a:hover {
 }
 .city > a:hover {
     color: cadetblue;
-    border: 5px outset cadetblue;
+    margin: 10px;
 }
 .images{
     display: inline;
