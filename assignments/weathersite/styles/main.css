@@ -57,15 +57,11 @@ nav ul li a:hover {
 }
 /*------Home Page--------*/
 .city{
-    max-width: 75%;
     padding: 5px;
 }
 .city_info {
     border: 2px solid cadetblue;
     padding: 15px;
-}
-.city_info:hover {
-    box-shadow: 4px 4px 10px cadetblue;
 }
 .images{
     display: inline;
@@ -82,7 +78,7 @@ main h1, main .tagline, .name{
     padding: 10px;
     text-align: center;
     margin: auto;
-    color: cadetblue;
+    color: aliceblue;
 }
 main h1 {
     font-size: 3em;
@@ -92,7 +88,7 @@ main h1 {
     display: flex;
     flex-direction: column;
     background: cadetblue;
-    color: aliceblue;
+    color: white;
     padding: 10px;
     text-align: center;
 }
@@ -102,7 +98,7 @@ main h1 {
 }
 /*-----TABLE-----*/
 .forecast {
-    background-color: aliceblue;
+    background-color: white;
     text-align: center;
     color: cadetblue;
     padding: 1px;
