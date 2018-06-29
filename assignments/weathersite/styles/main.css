@@ -50,10 +50,10 @@ nav ul li a {
     text-decoration: none;
 }
 nav ul li.active a {
-    background-color: aqua;
+    background-color: #4d2953;
 }
 nav ul li a:hover {
-    background-color: skyblue;
+    color: #4d2953;
 }
 /*------Home Page--------*/
 .city{
@@ -67,6 +67,9 @@ nav ul li a:hover {
 }
 .city_info:hover {
     box-shadow: 4px 4px 10px cadetblue;
+}
+.images{
+    float: right;
 }
 /*-----City Pages---------*/
 main h1, main .tagline{
