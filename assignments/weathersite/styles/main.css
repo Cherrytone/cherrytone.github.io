@@ -12,15 +12,13 @@ main > img {
     width: 100%; 
 }
 /*-----MULTI-----*/
-header, nav, main, #footer, .city { 
+header, nav, main, #footer, .city, #logo { 
   max-width: 75%;
   margin: auto;
 }
 header, nav, #footer, .weather-summary, .forecast, h3 {
     font-family: 'Muli', sans-serif;
 }
-/*--------LOGO------*/
-
 /*-----HEADER-----*/
 header {
     color: cadetblue;
