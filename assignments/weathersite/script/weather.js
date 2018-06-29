@@ -21,8 +21,9 @@ cityRequest.onload =  function() {
                 eventHTML = eventHTML + `<li><span>${event}</span></li>`;
             }
             var imgSrc = "images/" + name.toLowerCase() + "-events.jpeg";
+            var link = name.toLowerCase();
             eventHTML = eventHTML + '</ul>';
-            townHTML = townHTML + `<div class="city"><div class="city_info"><p class="name">${name}</p><div class="images"><img src="${imgSrc}" /></div>
+            townHTML = townHTML + `<div class="city"><a href=${link}.html><div class="city_info"><p class="name">${name}</p><div class="images"><img src="${imgSrc}" /></div>
                         <ul class="list">
                             <li>Motto:<span class="motto">${motto}</span></li>
                             <li>Year Founded:<span class="year">${year}</span></li>

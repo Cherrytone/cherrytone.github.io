@@ -60,6 +60,15 @@ nav ul li a:hover {
 .city_info {
     border: 2px solid cadetblue;
     padding: 15px;
+    overflow: auto;
+}
+.city > a {
+    color: inherit;
+    text-decoration: none;
+}
+.city > a:hover {
+    color: cadetblue;
+    border: 5px outset cadetblue;
 }
 .images{
     display: inline;
