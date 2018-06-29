@@ -30,7 +30,7 @@ cityRequest.onload =  function() {
                             <li>Population:<span class="pop">${pop}</span></li>
                             <li>Annual Rainfall:<span class="annu_rain">${annu_rain}</span></li>
                             <li>Local Events:<span class="event">${eventHTML}</li>
-                        </ul></div></div>`;
+                        </ul></div></a></div>`;
             }
         }
         document.getElementById("town_info").innerHTML= townHTML;
