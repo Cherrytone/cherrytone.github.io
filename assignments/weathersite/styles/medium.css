@@ -13,7 +13,7 @@
     
     table {display: none;}
     
-    article {display: none;}
+    .first {display: none;}
     
     .weather-summary > picture > img{
         position: static;
