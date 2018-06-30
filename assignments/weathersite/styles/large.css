@@ -21,7 +21,6 @@
         display: block;
         float: right;
     }
-    // Make hamburger responsive
     #nav_tabs.responsive {position: relative;}
     #nav_tabs.responsive .icon {
         position: absolute;
