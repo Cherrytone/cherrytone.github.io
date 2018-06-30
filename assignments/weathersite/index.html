@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="styles/large.css">
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>On the Spot Weather</title>
     </head>
     <body onload="cityHome()">
@@ -17,18 +18,17 @@
         <header>
             <img id="logo" src="images/larger_spot_weather-01-01.png" alt="On the Spot Weather logo">
         </header>
-
-            <nav id="nav_tabs">
-                <ul>
-    	           <li class="tabs active"><a href="index.html">Home</a></li>
-    	           <li class="tabs"><a href="franklin.html">Franklin</a></li>
-    	           <li class="tabs"><a href="greenville.html">Greenville</a></li>
-    	           <li class="tabs"><a href="springfield.html">Springfield</a></li>
-    	           <li class="tabs"><a href="stormcenter.html">Storm Center</a></li>
-    	           <li class="tabs"><a href="gallery.html">Gallery</a></li>
-                </ul>		
-            </nav>
-    
+        <div id="nav_tabs" class="topnav">
+               <a class="tabs active" href="index.html">Home</a>
+               <a class="tabs" href="franklin.html">Franklin</a>
+               <a class="tabs" href="greenville.html">Greenville</a>
+               <a class="tabs" href="springfield.html">Springfield</a>
+               <a class="tabs" href="stormcenter.html">Storm Center</a>
+               <a class="tabs" href="gallery.html">Gallery</a>
+               <a class="tabs icon" href="javascript:void(0);" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+               </a>
+        </div>
         <main>
             <img src="images/raindrops.jpeg" alt="river bank at dawn with clouds and green grass">
             
@@ -48,6 +48,7 @@
 <script src="script/moment.min.js"></script>
 <script src="script/currentdate.js"></script>
 <script src="script/weather.js"></script>
+<script src="script/nav_menu.js"></script>
 
 
 

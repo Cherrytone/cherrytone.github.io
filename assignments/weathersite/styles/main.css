@@ -12,11 +12,10 @@ main > img {
     width: 100%; 
 }
 /*-----MULTI-----*/
-header, nav, main, #footer, .city, #logo { 
-  max-width: 75%;
-  margin: auto;
+#nav_tabs { 
+  position: relative;
 }
-header, nav, #footer, .weather-summary, .forecast, h3 {
+header, #nav_tabs, #footer, .weather-summary, .forecast, h3 {
     font-family: 'Muli', sans-serif;
 }
 /*-----HEADER-----*/
@@ -24,34 +23,34 @@ header {
     color: cadetblue;
     text-align: center;
 }
+#logo {
+    max-width: 99%;
+}
 /*-----NAVIGATION-----*/
-nav {
+#nav_tabs {
     background-color: cadetblue;
     font-size: 25px;
-    padding: 2px;
-}
-nav ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding: 5px;
     text-align: center;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0; 
 }
-nav ul li {
-    padding: 10px;
-}
-nav ul li a {
+.tabs {
+    display: inline-flex;
     color: aliceblue;
     padding: 5px;
+    margin: 5px;
     text-decoration: none;
 }
-nav ul li.active a {
+.active {
     background-color: #4d2953;
 }
-nav ul li a:hover {
+.tabs:hover {
     color: #4d2953;
+}
+.icon:hover {
+    background-color: aliceblue;
+}
+a.tabs.icon{
+    display: none;
 }
 /*------Home Page--------*/
 .city{

@@ -4,8 +4,8 @@
         display: none;
     }
     
-    header, nav, main, footer { 
-      max-width: 75%;
+    header, #nav_tabs, main, footer { 
+      max-width: 100%;
       margin: auto;
     }
     .gallery {
@@ -16,4 +16,21 @@
     .images {
         display: none;
     }
-  }
+    #nav_tabs a:not(:first-child) {display: none;}
+    #nav_tabs a.icon {
+        display: block;
+        float: right;
+    }
+    // Make hamburger responsive
+    #nav_tabs.responsive {position: relative;}
+    #nav_tabs.responsive .icon {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+    }
+    #nav_tabs.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}

@@ -2,12 +2,12 @@
 
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
     
-    nav button { display:contents; }  /* hamburger button does not need to be shown in the medium on up views */
+    #nav_tabs button { display:contents; }  /* hamburger button does not need to be shown in the medium on up views */
     
     section.forecast {display: none; }  /* show the 10-day forecast with the medium view and up */
     
-    header, nav, main, footer, table { 
-      max-width: 50%;
+    header, #nav_tabs, main, footer, table { 
+      max-width: 100%;
       margin: auto;
     }
     
@@ -19,7 +19,7 @@
         position: static;
         width: 75%;
     }
-    nav ul {
+    #nav_tabs {
         flex-direction: column;
         text-align: center;
     }
