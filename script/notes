@@ -1,0 +1,42 @@
+/* var bcount = "";
+          for (var b = 0; b < output.length; ++b){
+              if (output[b] == "B")
+                bcount++;
+          } 
+      var wcount = "";
+          for (var w = 0; w < output.length; ++w){
+              if (output[w] == "W")
+                wcount++;
+          }*/
+      document.getElementById("banswer").innerHTML = bcount;
+      document.getElementById("wanswer").innerHTML = wcount;
+  ------------------------------------------------------------------------------
+}
+
+function enterKey(event){
+var enter = event.keyCode;
+        if (enter === 13) {
+            document.getElementsById("submitButton").click = true;
+        }
+}
+----------------------------------------------------------------------
+$("input").keyup(function(e){
+        var key = e.which;
+            if(key == 13) {
+                $("#submitGuess").click();
+        return false;
+            }
+        }); 
+        
+$("#myform").keypress(function(event) {
+   if (event.keyCode == '13') {
+       event.preventDefault();
+   }
+});
+
+
+
+$("#myform").onsubmit = function(event) {
+    event.preventDefault();
+    return false;
+}

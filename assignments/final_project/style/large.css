@@ -1,0 +1,93 @@
+/* Large view style sheet for bike site*/
+/*Orange-----#CA4B00
+Yellow/Tan---#CA8D00
+Green--------#005F47
+Blue---------#0020A3  */
+
+/*--------MAIN---------*/
+* {
+    border-radius: 5px;
+}
+/*-------LOGO----------*/
+#logo {
+    
+}
+/*-------HEADER---------*/
+#top {
+    display: flex;
+}
+.site_title{
+    margin: 20px;
+    background:#005F47;
+    color: aliceblue;
+    max-width: 50%;
+    text-align: center;
+    padding: 5px; 
+}
+.site_title {
+}
+#cart {
+
+}
+#call_to_action {
+    background-image: url("/assignments/final_project/images/site_photos/mountain_forest600px.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+    
+}
+/*------NAVICATION-------*/
+#nav_tabs, footer {
+    background-color: #0020A3;
+    font-size: 25px;
+    padding: 5px;
+}
+#nav_tabs {
+    text-align: center;
+}
+.tabs, .foot_tabs {
+    display: inline-flex;
+    color: aliceblue;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+.active {
+    background-color: aliceblue;
+    color: #0020A3
+}
+.active:hover {
+    color: aliceblue;
+}
+.tabs:hover, .foot_tabs:hover {
+    background-color: #005F47;
+}
+.icon:hover {
+    background-color: aliceblue;
+}
+a.tabs.icon{
+    display: none;
+}
+/*------FOOTER-----------*/
+footer {
+    text-align: right;
+}
+
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
