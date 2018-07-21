@@ -5,8 +5,8 @@ Green--------#005F47
 Blue---------#0020A3  */
 
 /*--------UNIVERSAL---------*/
-* {
-    max-width: 2000px;
+body {
+    max-width: 1140px;
     margin: auto;
 }
 h1, .site_title, .header {
@@ -56,7 +56,7 @@ hearder, main, footer, nav {
 }
 #sales {
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding-top: 10px;
     margin-bottom: 20px;
 }
@@ -79,6 +79,9 @@ figcaption {
 }
 .tour_header {
     padding-left: 20px;
+}
+.bike_img {
+    margin: 0px;
 }
 .bike, .tours {
     Box-shadow: 10px 10px 10px black; 
