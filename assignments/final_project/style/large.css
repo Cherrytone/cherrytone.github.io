@@ -28,17 +28,13 @@ hearder, main, footer, nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.site_title, .header {
+.site_title {
     color: #005F47;
-    font-size: 100px;
+    font-size: 150px;
     padding: 10px;
 }
 #cart {
-}
-#tag_line {
-    font-size: 100px;
-    color: #005F47;
-    padding: 10px;
+    
 }
 #cycle_link {
     margin-top: 10px;
@@ -53,6 +49,11 @@ hearder, main, footer, nav {
 }
 
 /*------MAIN-----------*/
+.header {
+    color: #CA4B00;
+    font-size: 100px;
+    padding: 10px;
+}
 .label{
     position: absolute;
 }
@@ -81,7 +82,7 @@ figcaption {
     margin-bottom: 10px;
 }
 .bike, .tours {
-    Box-shadow: 10px 10px 10px gray; 
+    Box-shadow: 10px 10px 10px black; 
 }
 /*------NAVICATION-------*/
 nav {
@@ -93,7 +94,9 @@ nav {
     padding: 5px;
     font-family: 'Muli', sans-serif; 
 }
-#nav_tabs {
+#cart {
+    float: right;
+    padding: 5px;
 }
 .tabs, .foot_tabs {
     display: inline-flex;
@@ -109,7 +112,7 @@ nav {
 .active:hover {
     color: aliceblue;
 }
-.tabs:hover, .foot_tabs:hover {
+.tabs:hover, .foot_tabs:hover, #cart:hover {
     background-color: #005F47;
 }
 .icon:hover {
