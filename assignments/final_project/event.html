@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Events Registrations for The Mountain Spoke, a fictictious retail store for bike enthusiasts near Bozeman Montana">
+        <link rel="stylesheet" href="style/normalize.css">
+        <link rel="stylesheet" href="style/small.css">
+        <link rel="stylesheet" href="style/medium.css">
+        <link rel="stylesheet" href="style/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Archivo+Narrow|Balthazar|Bowlby+One+SC|Gravitas+One|Merriweather|Merriweather+Sans|Muli|Poller+One" rel="stylesheet">
+        <title>Events Registration | The Mountain Spoke</title>
+    </head>
+    <body onload="todayDate()">
+        <header>
+                <img id="logo" src="images/logo/logo300px.png" alt="The Mountain Spoke Logo">
+                <label class="site_title">The Mountain Spoke</label>
+            <nav id="nav_tabs" class="topnav">
+               <a class="tabs" href="index.html">Home</a>
+               <a class="tabs" href="tours.html">Tours</a>
+               <a class="tabs" href="products.html">Products</a>
+               <a class="tabs active" href="event.html">Events</a>
+               <a class="tabs" href="service.html">Service|Repairs</a>
+               <a class="tabs" href="contact.html">Contact Us</a>
+               <a class="tabs" href="resources.html">Resources|Credits</a>
+               <img id="cart" src="images/icons/white_cart.png">
+               <a class="tabs icon" href="javascript:void(0);" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+               </a>
+            </nav>
+        </header>
+        <main>
+             <div class="form">
+                <h1 class="pageTitle">Cycle the Continental Divide Annual Event</h1>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                        <div class="inner_box">
+                            <label class="title">Full Name:</label>
+                                <input type="text" name="fullname" pattern="[A-Za-z]{5}" required>
+                            <br>
+                            <label class="title">Email:</label>
+                                <input type="email" name="email" placeholder="lovetobike@mountain.com">
+                            <br>
+                            <label class="title">Phone Number:</label>
+                                <input type="tel" name="phone_number" required>
+                            <br>
+                            <label class="title">Date of Birth:</label>
+                                <input type="date" name="birth_date">
+                            <br>
+                            <label class="title">State or Country:</label>
+                                <input type="text" name="state_country">
+                            <br>
+                            <label class="title">Zip Code:</label>
+                                <input id="zip" type="number" name="zipcode" required>
+                            <br>
+                        </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Special Accomedations/Comments</legend>
+                        <div class="additional">
+                            Optional Notes:<br>
+                            <textarea rows="10" cols="30"></textarea><br>
+                        </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Submit Form</legend>
+                        <div class="additional">
+                            <input class="button" type="submit" name="submit" onclick="thankYou()">
+                        </div>
+                </fieldset> 
+            </form>
+            
+          
+        </main>
+        <footer>
+            <div class="footer-bar">
+                &copy;2018 | All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span> |
+                <a class="foot_tabs" href="contact.html">Contact Us</a>
+                <a class="foot_tabs" href="resources.html">Resources/Credits</a>|
+                <a class="foot_tabs" href="">Video Link</a>
+            </div>
+        </footer>
+        
+    <script src="script/todaydate.js"></script>
+        
+    </body>
+</html>
