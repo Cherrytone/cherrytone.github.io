@@ -4,9 +4,20 @@ Yellow/Tan---#CA8D00
 Green--------#005F47
 Blue---------#0020A3  */
 
-/*--------MAIN---------*/
+/*--------UNIVERSAL---------*/
 * {
-    border-radius: 5px;
+    max-width: 2000px;
+    margin: auto;
+}
+h1, .site_title, .header {
+    font-family: "Alegreya SC", serif;
+}
+main, nav > a {
+    font-family: "Archivo Narrow", sans-serif; 
+}
+hearder, main, footer, nav {
+    
+    
 }
 /*-------LOGO----------*/
 #logo {
@@ -14,35 +25,75 @@ Blue---------#0020A3  */
 }
 /*-------HEADER---------*/
 #top {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.site_title{
-    margin: 20px;
-    background:#005F47;
-    color: aliceblue;
-    max-width: 50%;
-    text-align: center;
-    padding: 5px; 
-}
-.site_title {
+.site_title, .header {
+    color: #005F47;
+    font-size: 100px;
+    padding: 10px;
 }
 #cart {
-
 }
-#call_to_action {
-    background-image: url("/assignments/final_project/images/site_photos/mountain_forest600px.jpg");
-    background-repeat: no-repeat;
-    height: 300px;
+#tag_line {
+    font-size: 100px;
+    color: #005F47;
+    padding: 10px;
+}
+#cycle_link {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+#cycle_link > a {
+    color: aliceblue;
+    padding: 20px;
+    font-size: 50px;
+    background: #005F47;
+    border-radius: 6px;
+}
+
+/*------MAIN-----------*/
+.label{
+    position: absolute;
+}
+#sales {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    padding-top: 10px;
+    margin-bottom: 10px;
     
 }
+#tours {
+    display: grid;
+    grid-template-columns: 8fr 8fr;
+    padding-top: 10px;
+    align-content: center;
+}
+figcaption {
+    font-size: 30px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.adventure {
+    background-image: url(../images/site_photos/montana_mt_2000px.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 10px;
+}
+.bike, .tours {
+    Box-shadow: 10px 10px 10px gray; 
+}
 /*------NAVICATION-------*/
+nav {
+    margin: 0;
+}
 #nav_tabs, footer {
     background-color: #0020A3;
     font-size: 25px;
     padding: 5px;
+    font-family: 'Muli', sans-serif; 
 }
 #nav_tabs {
-    text-align: center;
 }
 .tabs, .foot_tabs {
     display: inline-flex;
@@ -69,10 +120,11 @@ a.tabs.icon{
 }
 /*------FOOTER-----------*/
 footer {
-    text-align: right;
+    color: aliceblue;
+    text-align: left;
 }
 
-/*-----------------*/
+
 /*-----------------*/
 /*-----------------*/
 /*-----------------*/

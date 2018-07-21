@@ -8,16 +8,14 @@
         <link rel="stylesheet" href="style/small.css">
         <link rel="stylesheet" href="style/medium.css">
         <link rel="stylesheet" href="style/large.css">
-        <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Bowlby+One+SC|Gravitas+One|Merriweather+Sans|Muli|Poller+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Archivo+Narrow|Balthazar|Bowlby+One+SC|Gravitas+One|Merriweather|Merriweather+Sans|Muli|Poller+One" rel="stylesheet">
         <title>The Mountain Spoke</title>
     </head>
     <body>
-        <header>
-            <section id="top">
+        <header onload="todayDate()">
                 <img id="logo" src="images/logo/logo300px.png" alt="The Mountain Spoke Logo">
-                <h1 class="site_title">The Mountain Spoke</h1>
+                <label class="site_title">The Mountain Spoke</label>
                 <img id="cart" src="images/icons/cart100px.png">
-            </section>
             <nav id="nav_tabs" class="topnav">
                <a class="tabs active" href="index.html">Home</a>
                <a class="tabs" href="tours.html">Tours</a>
@@ -31,39 +29,45 @@
             </nav>
         </header>
         <main>
-            <section id="call_to_action">
-                <p>Register Now for the <a href="events.html">Cycle the Continental Divide Annual Event</a></p>
+            <section class="register">
+                <label class="header">Register Now</label>
+                <p id="cycle_link"><a href="events.html">Cycle the Continental Divide Annual Event</a></p>
             </section>
             <section id="sales">
-                <figure class="sale">
-                    <img class="one" src="" alt="Mountain Bike for Sale">
-                    <figcaption></figcaption>
+                <figure class="bike">
+                    <img class="one" src="images/bikes/beach_bike600px.jpg" alt="A bike with rugged wheels on a rocky beach with the sun set in the background">
+                    <figcaption>World Traveler | Rugger 6.1</figcaption>
                 </figure>
-                <figure class="sale">
-                    <img class="two" src="">
-                    <figcaption></figcaption>
+                <figure class="bike">
+                    <img class="two" src="images/bikes/black_bike600px.jpg" alt="A bike on the back drop of a wooden wall">
+                    <figcaption>City Slicker |  Bobi 2500</figcaption>
                 </figure>
-                <figure class="sale">
-                    <img class="three" src="" alt="Mountain Bike for Sale">
-                    <figcaption></figcaption>
+                <figure class="bike">
+                    <img class="three" src="images/bikes/photo_by_philipp_m600px.jpg" alt="A bike in the forest on a dirt path">
+                    <figcaption>Mountain Dweller | Ticon 68</figcaption>
                 </figure>
             </section>
+            <label class="header">Advendture Tours</label>
             <section id="tours">
-                <h1>Adventure Tours</h1>
                 <figure class="tours">
-                    <img src="" alt="Tour">
-                    <figcaption></figcaption>
+                    <img src="/images/site_photos/biker_man1x1.jpg" alt="Man with a bike on the top of a mountain">
+                    <figcaption>Mountain Peaks Adventure Tour</figcaption>
                 </figure>
                 <figure class="tours">
-                    <img src="" alt="Tour">
-                    <figcaption></figcaption>
+                    <img src="/images/site_photos/event1x1.jpg" alt="A man racing through the hills of a grass filled mountain valley">
+                    <figcaption>Valley Hills Adventure Tour</figcaption>
                 </figure>
             </section>
         </main>
         <footer>
-            <a class="foot_tabs" href="contact.html">Contact Us</a>
-            <a class="foot_tabs" href="resources.html">Resources/Credits</a>
+            <div class="footer-bar">
+                &copy;2018 | All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span> |
+                <a class="foot_tabs" href="contact.html">Contact Us</a>
+                <a class="foot_tabs" href="resources.html">Resources/Credits</a>
+            </div>
         </footer>
+        
+    <script src="script/todaydate.js"></script>
         
     </body>
 </html>
