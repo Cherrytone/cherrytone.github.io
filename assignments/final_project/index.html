@@ -11,11 +11,10 @@
         <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Archivo+Narrow|Balthazar|Bowlby+One+SC|Gravitas+One|Merriweather|Merriweather+Sans|Muli|Poller+One" rel="stylesheet">
         <title>The Mountain Spoke</title>
     </head>
-    <body>
-        <header onload="todayDate()">
+    <body onload="todayDate()">
+        <header>
                 <img id="logo" src="images/logo/logo300px.png" alt="The Mountain Spoke Logo">
                 <label class="site_title">The Mountain Spoke</label>
-                <img id="cart" src="images/icons/cart100px.png">
             <nav id="nav_tabs" class="topnav">
                <a class="tabs active" href="index.html">Home</a>
                <a class="tabs" href="tours.html">Tours</a>
@@ -23,6 +22,7 @@
                <a class="tabs" href="service.html">Service|Repairs</a>
                <a class="tabs" href="contact.html">Contact Us</a>
                <a class="tabs" href="resources.html">Resources|Credits</a>
+               <img id="cart" src="images/icons/white_cart.png">
                <a class="tabs icon" href="javascript:void(0);" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
                </a>
@@ -30,8 +30,11 @@
         </header>
         <main>
             <section class="register">
-                <label class="header">Register Now</label>
-                <p id="cycle_link"><a href="events.html">Cycle the Continental Divide Annual Event</a></p>
+                <div class="label">
+                    <label class="header">Register Now</label>
+                    <p id="cycle_link"><a href="events.html">Cycle the Continental Divide Annual Event</a></p>
+                </div>
+                <img class="site_image" src="images/site_photos/mountain_forest518hight.jpg" alt="snow capped mountains with forest and a valley lake reflecting the mountain">
             </section>
             <section id="sales">
                 <figure class="bike">
@@ -47,17 +50,19 @@
                     <figcaption>Mountain Dweller | Ticon 68</figcaption>
                 </figure>
             </section>
-            <label class="header">Advendture Tours</label>
-            <section id="tours">
-                <figure class="tours">
-                    <img src="/images/site_photos/biker_man1x1.jpg" alt="Man with a bike on the top of a mountain">
-                    <figcaption>Mountain Peaks Adventure Tour</figcaption>
-                </figure>
-                <figure class="tours">
-                    <img src="/images/site_photos/event1x1.jpg" alt="A man racing through the hills of a grass filled mountain valley">
-                    <figcaption>Valley Hills Adventure Tour</figcaption>
-                </figure>
-            </section>
+            <div class="adventure">
+                <label class="header">Advendture Tours</label>
+                <section id="tours">
+                    <figure class="tours">
+                        <img src="/images/site_photos/biker_man1x1.jpg" alt="Man with a bike on the top of a mountain">
+                        <figcaption>Mountain Peaks Adventure Tour</figcaption>
+                    </figure>
+                    <figure class="tours">
+                        <img src="/images/site_photos/event1x1.jpg" alt="A man racing through the hills of a grass filled mountain valley">
+                        <figcaption>Valley Hills Adventure Tour</figcaption>
+                    </figure>
+                </section>
+            </div>
         </main>
         <footer>
             <div class="footer-bar">
