@@ -33,9 +33,6 @@ hearder, main, footer, nav {
     font-size: 150px;
     padding: 10px;
 }
-#cart {
-    
-}
 #cycle_link {
     margin-top: 10px;
     margin-left: 15px;
@@ -62,7 +59,6 @@ hearder, main, footer, nav {
     grid-template-columns: 1fr 5fr 1fr;
     padding-top: 10px;
     margin-bottom: 20px;
-    
 }
 #tours {
     display: grid;
@@ -80,6 +76,9 @@ figcaption {
     background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: 20px;
+}
+.tour_header {
+    padding-left: 20px;
 }
 .bike, .tours {
     Box-shadow: 10px 10px 10px black; 
