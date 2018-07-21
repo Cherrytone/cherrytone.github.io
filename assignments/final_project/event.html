@@ -30,47 +30,104 @@
             </nav>
         </header>
         <main>
-             <div class="form">
                 <h1 class="pageTitle">Cycle the Continental Divide Annual Event</h1>
+            <div class="tab">
+                  <button class="tablinks" onclick="openCity(event, 'dates')">Dates</button>
+                  <button class="tablinks" onclick="openCity(event, 'routes')">Routs</button>
+                  <button class="tablinks" onclick="openCity(event, 'cost')">Cost</button>
+                  <button class="tablinks" onclick="openCity(event, 'requirements')">Basic Requirments</button>
             </div>
-            <form>
-                <fieldset>
-                    <legend>Personal Information</legend>
-                        <div class="inner_box">
-                            <label class="title">Full Name:</label>
-                                <input type="text" name="fullname" pattern="[A-Za-z]{5}" required>
-                            <br>
-                            <label class="title">Email:</label>
-                                <input type="email" name="email" placeholder="lovetobike@mountain.com">
-                            <br>
-                            <label class="title">Phone Number:</label>
-                                <input type="tel" name="phone_number" required>
-                            <br>
-                            <label class="title">Date of Birth:</label>
-                                <input type="date" name="birth_date">
-                            <br>
-                            <label class="title">State or Country:</label>
-                                <input type="text" name="state_country">
-                            <br>
-                            <label class="title">Zip Code:</label>
-                                <input id="zip" type="number" name="zipcode" required>
-                            <br>
-                        </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Special Accomedations/Comments</legend>
-                        <div class="additional">
-                            Optional Notes:<br>
-                            <textarea rows="10" cols="30"></textarea><br>
-                        </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Submit Form</legend>
-                        <div class="additional">
-                            <input class="button" type="submit" name="submit" onclick="thankYou()">
-                        </div>
-                </fieldset> 
-            </form>
+            <div id="dates" class="tabcontent">
+                  <h3>Dates 2019</h3>
+                  <p>Start:August 3rd, 2019 </p>
+                         <ul>
+                            <li>Week 1: August 3rd - 10th</li>
+                            <li>Week 2: August 10th - 17th</li>
+                            <li>Week 3: August 3rd - 24th</li>
+                            <li>Week 4: August 3rd - 31st</li>
+                            <li>Week 5: August 3rd - September 7th</li>
+                            <li>Week 6: September 3rd - 14th</li>
+                            <li>Week 7: September 3rd - 21st</li>
+                        </ul>
+                  <p>End: September 21st, 2019 </p>
+            </div>
+            <div id="routes" class="tabcontent">
+                  <h3>Paris</h3>
+                  <p>Paris is the capital of France.</p> 
+            </div>
+            <div id="cost" class="tabcontent">
+                  <h3>Cost</h3>
+                  <p>Entire Tour: $6,700</p>
+                  <p>Single Week: $1,000</p>
+                  <ul>
+                        <li>The entry fee includes</li>
+                        <li>Accommodation is based on camp sites and motels ( minimal 17nights ) during the tour</li>
+                        <li>One night hotel accommodation before the start in Sycamore and after the finish in Waynesville</li>
+                        <li>Breakfast, lunch and meal at arrival ( during cycling days )</li>
+                        <li>Fruit, water, sport drinks and energy bars ( during cycling days )</li>
+                        <li>Dinner during cycling days if we are camping</li>
+                        <li>Transportation of luggage</li>
+                        <li>Organization of the journey</li>
+                        <li>Support by bike mechanic</li>
+                        <li>“Cycle the Continental Divide” cycling jersey</li>
+                        <li>Full set of maps of the Adventure Cycling Association</li>
+                        <li>Tour guide with information about the route</li>
+                        <li>DVD with compilation of the best pictures</li>
+                        <li>Communal transport between the finish of Cycle the Continental Divide in Waynesville and the hotel in Bartting</li>
+                 </ul>
+                 <ul>
+                        <li>The entry fee does NOT include:</li>
+                        <li>Airfares and transfer to the start in Sycamore and from the hotel in Bartting</li> 
+                        <li>Food and drinks on rest days</li> 
+                        <li>Dinner at the days with hotel or motel accommodation</li>
+                        <li>Personal health- and travel-insurance</li> 
+                        <li>Entry fees of tourist sites</li>
+                </ul>
+            </div>
+             <div id="requirements" class="tabcontent">
+                  <h3>Requirements</h3>
+                  <p>Paris is the capital of France.</p> 
+            </div>
+            <div class="form">
+                <form>
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                            <div class="inner_box">
+                                <label class="title">Full Name:</label>
+                                    <input type="text" name="fullname" pattern="[A-Za-z]{5}" required>
+                                <br>
+                                <label class="title">Email:</label>
+                                    <input type="email" name="email" placeholder="lovetobike@mountain.com">
+                                <br>
+                                <label class="title">Phone Number:</label>
+                                    <input type="tel" name="phone_number" required>
+                                <br>
+                                <label class="title">Date of Birth:</label>
+                                    <input type="date" name="birth_date">
+                                <br>
+                                <label class="title">State or Country:</label>
+                                    <input type="text" name="state_country">
+                                <br>
+                                <label class="title">Zip Code:</label>
+                                    <input id="zip" type="number" name="zipcode" required>
+                                <br>
+                            </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Special Accomedations/Comments</legend>
+                            <div class="additional">
+                                Optional Notes:<br>
+                                <textarea rows="10" cols="30"></textarea><br>
+                            </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Submit Form</legend>
+                            <div class="additional">
+                                <input class="button" type="submit" name="submit" onclick="thankYou()">
+                            </div>
+                    </fieldset> 
+                </form>
+            </div>
             
           
         </main>
@@ -84,6 +141,7 @@
         </footer>
         
     <script src="script/todaydate.js"></script>
+    <script src="script/tabs.js"></script>
         
     </body>
 </html>
