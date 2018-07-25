@@ -1,7 +1,7 @@
 /* Large view style sheet for bike site*/
 /*Orange-----#CA4B00
 Yellow/Tan---#CA8D00
-Green--------#005F47
+Green--------#009479
 Blue---------#0020A3  */
 
 /*--------UNIVERSAL---------*/
@@ -17,9 +17,20 @@ main, nav > a {
 }
 /*-------LOGO----------*/
 /*-------HEADER---------*/
+#top {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+}
 .site_title {
-    color: #005F47;
+    text-align: center;
+    color: #009479;
     font-size: 80px;
+}
+.site_title > h3 {
+    font-size: 30px;
+    color: #CA4B00;
+    margin: 0;
 }
 #cycle_link {
     margin-top: 10px;
@@ -29,7 +40,7 @@ main, nav > a {
     color: aliceblue;
     padding: 15px;
     font-size: 30px;
-    background: #005F47;
+    background: #009479;
     border-radius: 6px;
 }
 .register {
@@ -70,6 +81,9 @@ figcaption, .fig_tour {
     padding-left: 35px;
     text-align: left;
 }
+#fig_tour_site1, #fig_tour_site2 {
+    text-align: center;
+}
 .adventure {
     background-image: url(../images/site_photos/montana_mt_2000px.jpg);
     background-repeat: no-repeat;
@@ -79,10 +93,10 @@ figcaption, .fig_tour {
 .adventure, .label {
     text-align: center;
 }
-.bike {
+.bike, .bike_sales {
     margin: 0px;
 }
-.bike,.tours {
+.bike,.tours, .bike_sales {
     box-shadow: 0px 10px 50px;
 }
 .tours {
@@ -92,16 +106,16 @@ figcaption, .fig_tour {
 nav {
     margin: 0;
 }
+.nav_ul {
+    list-style-type: none;
+    display: inline-flex;
+    text-align: center;
+}
 #nav_tabs, footer {
     background-color: #0020A3;
     font-size: 25px;
     padding: 5px;
     font-family: 'Muli', sans-serif; 
-}
-#cart {
-    float: right;
-    padding: 5px;
-    margin-right: 50px;
 }
 .tabs, .foot_tabs {
     display: inline-flex;
@@ -118,7 +132,7 @@ nav {
     color: aliceblue;
 }
 .tabs:hover, .foot_tabs:hover, #cart:hover {
-    background-color: #005F47;
+    background-color: #009479;
 }
 .icon:hover {
     background-color: aliceblue;
@@ -159,7 +173,7 @@ input{
     width: inherit;
 }
 fieldset{
-    border: 3px solid #005F47;
+    border: 3px solid #009479;
     padding-bottom: 10px;
     margin: 5px;
 }
@@ -206,8 +220,19 @@ legend{
     border: 1px solid #ccc;
     border-top: none;
 }
+/*-----PRODUCTS PAGE------------*/
+.bike_content {
+    display: none;
+    padding-left: 10px;  
+}
+.bike_sales:hover {
+    background-color: #009479; 
+}
+.bike_content:target {
+    display: contents;
+}
 /*-----------------*/
-/*-----------------*/
+
 /*-----------------*/
 /*-----------------*/
 /*-----------------*/

@@ -3,27 +3,24 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="The Mountain Spoke, a fictictious retail store for bike enthusiasts near Bozeman Montana">
+        <meta name="description" content="Products for sale for The Mountain Spoke, a fictictious retail store for bike enthusiasts near Bozeman Montana">
         <link rel="stylesheet" href="style/normalize.css">
         <link rel="stylesheet" href="style/small.css">
         <link rel="stylesheet" href="style/medium.css">
         <link rel="stylesheet" href="style/large.css">
         <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Archivo+Narrow|Balthazar|Bowlby+One+SC|Gravitas+One|Merriweather|Merriweather+Sans|Muli|Poller+One" rel="stylesheet">
-        <title>The Mountain Spoke</title>
+        <link rel="stylesheet" href="style/accordion.sass">
+        <title>Products | The Mountain Spoke</title>
     </head>
     <body onload="todayDate()">
         <header>
-            <div id="top">
                 <img id="logo" src="images/logo/logo300px.png" alt="The Mountain Spoke Logo">
-                <label class="site_title">The Mountain Spoke
-                    <h3>Where the Bikers Come to Ride</h3>
-                </label>
-            </div>
+                <label class="site_title">The Mountain Spoke</label>
             <nav id="nav_tabs" class="topnav">
                 <ul class="nav_ul">
-                   <li><a class="tabs active" href="index.html">Home</a></li>
+                   <li><a class="tabs" href="index.html">Home</a></li>
                    <li><a class="tabs" href="tours.html">Tours</a></li>
-                   <li><a class="tabs" href="products.html">Products</a></li>
+                   <li><a class="tabs active" href="products.html">Products</a></li>
                    <li><a class="tabs" href="event.html">Events</a></li>
                    <li><a class="tabs" href="service.html">Service|Repairs</a></li>
                    <li><a class="tabs" href="contact.html">Contact Us</a></li>
@@ -34,40 +31,38 @@
             </nav>
         </header>
         <main>
-            <section class="register">
-                <div class="reg_label">
-                    <label class="header reg_header">Register Now</label>
-                    <p id="cycle_link"><a href="events.html">Cycle the Continental Divide Annual Event</a></p>
-                </div>
-                <img class="site_image" src="images/site_photos/mountain_forest_original.jpg" alt="snow capped mountains with forest and a valley lake reflecting the mountain">
-            </section>
-            <section id="sales">
-                <figure class="bike">
+            <section id="sales_accordian">
+                <figure class="bike_sales">
                     <img class="bike_img" src="images/bikes/beach_bike380px.jpg" alt="A bike with rugged wheels on a rocky beach with the sun set in the background">
                     <figcaption>World Traveler | Rugger 6.1</figcaption>
                 </figure>
-                <figure class="bike">
+                <p></p>
+                <div class="bike_sales">
+                <figure class="bike_sales">
                     <img class="bike_img" src="images/bikes/black_bike380px.jpg" alt="A bike on the back drop of a wooden wall">
                     <figcaption>City Slicker |  Bobi 2500</figcaption>
                 </figure>
-                <figure class="bike">
+                    <div class="bike_content">
+                        <p>Our entry-level 820 mountain bike is a versatile step in the mountain direction, equally suited to beginner trails and potholed city streets.
+                            <br>If you've heard the call of the trail but aren't ready to commit to the MTB life, 820 is the perfect way to get your feet dirty. 
+                            <br>
+                            <br>
+                            Key features
+                            </p>
+                            <ul>
+                                <li>Quality construction and components, fantastic value</li> 
+                                <li>Ready to take on rough pavement, light trails, or both</li> 
+                                <li>75mm suspension fork takes the edge off bumps</li> 
+                                <li>Backed by Trek's limited lifetime warranty</li>
+                            </ul>
+                        </div>
+                    </div>
+                     
+                <figure class="bike_sales">
                     <img class="bike_img" src="images/bikes/photo_by_philipp_m380px.jpg" alt="A bike in the forest on a dirt path">
                     <figcaption>Mountain Dweller | Ticon 68</figcaption>
                 </figure>
             </section>
-            <div class="adventure">
-                <label class="header tour_header">Advendture Tours</label>
-                <section id="tours">
-                    <figure class="tours">
-                        <img class="tour_img" src="images/site_photos/biker_man1x1.jpg" alt="Man with a bike on the top of a mountain">
-                        <figcaption class="fig_tour">Mountain Peaks Adventure Tour</figcaption>
-                    </figure>
-                    <figure class="tours">
-                        <img class="tour_img" src="images/site_photos/event1x1.jpg" alt="A man racing through the hills of a grass filled mountain valley">
-                        <figcaption class="fig_tour">Valley Hills Adventure Tour</figcaption>
-                    </figure>
-                </section>
-            </div>
         </main>
         <footer>
             <div class="footer-bar">
@@ -76,9 +71,23 @@
                 <a class="foot_tabs" href="resources.html">Resources/Credits</a>|
                 <a class="foot_tabs" href="">Video Link</a>
             </div>
+            
+            <dl class="accordion">
+
+<dt><a href="">Panel 1</a></dt>
+<dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
+
+<dt><a href="">Panel 2</a></dt>
+<dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
+
+<dt><a href="">Panel 3</a></dt>
+<dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
+
+</dl>
         </footer>
         
     <script src="script/todaydate.js"></script>
+    <script src="script/accordion.js"></script>
         
     </body>
 </html>
