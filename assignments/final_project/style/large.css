@@ -80,6 +80,7 @@ Light Blue---#0881B2 */
     }
     #fig_tour_site1, #fig_tour_site2 {
         text-align: center;
+        padding: 10px;
     }
     .adventure {
         background-image: url(../images/site_photos/montana_mt_2000px.jpg);
@@ -98,6 +99,13 @@ Light Blue---#0881B2 */
     }
     .tours {
         text-align: center;
+    }
+    #link_sales:link, #link_sales:visited, #link_sales:active {
+        text-decoration:  none;
+        color: black;
+    }
+    #link_sales:hover {
+        color: #CA4B00;
     }
     /*------NAVICATION-------*/
     .dropdown {
@@ -257,15 +265,8 @@ Light Blue---#0881B2 */
     color: #CA4B00;
     font-size: 20px
 }
-/*-----------------*/
-/*-----------------*/
-/*-----------------*/
-/*-----------------*/
-/*-----------------*/
-/*-----------------*/
-/*-----------------*/
-/*-----------------*/
-/*-----------------*/
-/*-----------------*/
-/*-----------------*/
-/*-----------------*/
+/*------TOUR PAGE-----------*/
+.reg {
+    background-color: #0881B2;
+    border: 3px outset #0881B2;
+}
