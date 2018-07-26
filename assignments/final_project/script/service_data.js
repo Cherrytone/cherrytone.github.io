@@ -14,7 +14,8 @@ function serviceHome(){
         for (var p = 0; p < price[p]; p++) {
              price = price[p];
             }
-        allHTML = `<li>${type}</li><li>${price}</li>`;
+        allHTML = `<td id=${type}></td>
+                   <td id=${price}></td>`;
 
         document.getElementById("service_info").innerHTML= allHTML;
     }
