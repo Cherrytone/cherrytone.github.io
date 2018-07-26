@@ -18,7 +18,7 @@ main, nav > a {
 }
 /*-------LOGO----------*/
 /*-------HEADER---------*/
-#top {
+.top {
     display: grid;
     grid-template-columns: 1fr 10fr;
     align-items: center;
@@ -55,6 +55,7 @@ main, nav > a {
     font-size: 100px;
     padding: 10px;
     text-shadow: 2px 2px black;
+    text-align: center;
 }
 .reg_label{
     position: absolute;
@@ -222,20 +223,22 @@ legend{
     border-top: none;
 }
 /*-----PRODUCTS PAGE------------*/
-.bike_content {
+#bike_content1, #bike_content2, #bike_content3 {
     display: none;
-    padding-left: 10px;  
+    padding: 10px;
+    border: 2px solid #009479;
+}
+#sales_accordian {
+    max-width: 50%;
+    margin: auto;
+}
+.bike_sales {
+    text-align: center;
 }
 .bike_sales:hover {
     background-color: #009479; 
 }
-.bike_content:target {
-    display: contents;
-}
 /*------SERVICE PAGE-----------*/
-.service_header {
-    text-align: center;
-}
 #quote {
     font-size: 30px;
     text-align: center;

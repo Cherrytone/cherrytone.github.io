@@ -14,8 +14,11 @@
     </head>
     <body onload="todayDate()">
         <header>
+            <div class="top">
                 <img id="logo" src="images/logo/logo300px.png" alt="The Mountain Spoke Logo">
-                <label class="site_title">The Mountain Spoke</label>
+                <label class="site_title">The Mountain Spoke<h3>We'll keep you riding</h3></label>
+            </div>
+                
             <nav id="nav_tabs" class="topnav">
                 <ul class="nav_ul">
                    <li><a class="tabs" href="index.html">Home</a></li>
@@ -31,18 +34,34 @@
             </nav>
         </header>
         <main>
+            <label class="header products_header">Products</label>
             <section id="sales_accordian">
-                <figure class="bike_sales">
-                    <img class="bike_img" src="images/bikes/beach_bike380px.jpg" alt="A bike with rugged wheels on a rocky beach with the sun set in the background">
-                    <figcaption>World Traveler | Rugger 6.1</figcaption>
-                </figure>
-                <p></p>
-                <div class="bike_sales">
-                <figure class="bike_sales">
-                    <img class="bike_img" src="images/bikes/black_bike380px.jpg" alt="A bike on the back drop of a wooden wall">
-                    <figcaption>City Slicker |  Bobi 2500</figcaption>
-                </figure>
-                    <div class="bike_content">
+                <div id="bike_sales1">
+                    <figure class="bike_sales">
+                        <img class="bike_img" src="images/bikes/beach_bike380px.jpg" alt="A bike with rugged wheels on a rocky beach with the sun set in the background">
+                        <figcaption>World Traveler | Rugger 6.1</figcaption>
+                    </figure>
+                    <div id="bike_content1">
+                        <p>Our entry-level 820 mountain bike is a versatile step in the mountain direction, equally suited to beginner trails and potholed city streets.
+                            <br>If you've heard the call of the trail but aren't ready to commit to the MTB life, 820 is the perfect way to get your feet dirty. 
+                            <br>
+                            <br>
+                            Key features
+                            </p>
+                            <ul>
+                                <li>Quality construction and components, fantastic value</li> 
+                                <li>Ready to take on rough pavement, light trails, or both</li> 
+                                <li>75mm suspension fork takes the edge off bumps</li> 
+                                <li>Backed by Trek's limited lifetime warranty</li>
+                            </ul>
+                        </div>
+                </div>
+                <div id="bike_sales2">
+                    <figure class="bike_sales">
+                        <img class="bike_img" src="images/bikes/black_bike380px.jpg" alt="A bike on the back drop of a wooden wall">
+                        <figcaption>City Slicker |  Bobi 2500</figcaption>
+                    </figure>
+                    <div id="bike_content2">
                         <p>Our entry-level 820 mountain bike is a versatile step in the mountain direction, equally suited to beginner trails and potholed city streets.
                             <br>If you've heard the call of the trail but aren't ready to commit to the MTB life, 820 is the perfect way to get your feet dirty. 
                             <br>
@@ -57,11 +76,26 @@
                             </ul>
                         </div>
                     </div>
-                     
-                <figure class="bike_sales">
-                    <img class="bike_img" src="images/bikes/photo_by_philipp_m380px.jpg" alt="A bike in the forest on a dirt path">
-                    <figcaption>Mountain Dweller | Ticon 68</figcaption>
-                </figure>
+                <div id="bike_sales3">     
+                    <figure class="bike_sales">
+                        <img class="bike_img" src="images/bikes/photo_by_philipp_m380px.jpg" alt="A bike in the forest on a dirt path">
+                        <figcaption>Mountain Dweller | Ticon 68</figcaption>
+                    </figure>
+                    <div id="bike_content3">
+                        <p>Our entry-level 820 mountain bike is a versatile step in the mountain direction, equally suited to beginner trails and potholed city streets.
+                            <br>If you've heard the call of the trail but aren't ready to commit to the MTB life, 820 is the perfect way to get your feet dirty. 
+                            <br>
+                            <br>
+                            Key features
+                            </p>
+                            <ul>
+                                <li>Quality construction and components, fantastic value</li> 
+                                <li>Ready to take on rough pavement, light trails, or both</li> 
+                                <li>75mm suspension fork takes the edge off bumps</li> 
+                                <li>Backed by Trek's limited lifetime warranty</li>
+                            </ul>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
@@ -71,23 +105,26 @@
                 <a class="foot_tabs" href="resources.html">Resources/Credits</a>|
                 <a class="foot_tabs" href="">Video Link</a>
             </div>
-            
-            <dl class="accordion">
-
-<dt><a href="">Panel 1</a></dt>
-<dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
-
-<dt><a href="">Panel 2</a></dt>
-<dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
-
-<dt><a href="">Panel 3</a></dt>
-<dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
-
-</dl>
         </footer>
         
     <script src="script/todaydate.js"></script>
-    <script src="script/accordion.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#bike_sales1").click(function(){
+                $("#bike_content1").toggle();
+            });
+            });
+            $(document).ready(function(){
+            $("#bike_sales2").click(function(){
+                $("#bike_content2").toggle();
+            });
+            });
+            $(document).ready(function(){
+            $("#bike_sales3").click(function(){
+                $("#bike_content3").toggle();
+            });
+        });</script>
         
     </body>
 </html>
