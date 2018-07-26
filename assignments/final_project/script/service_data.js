@@ -5,18 +5,22 @@ function serviceHome(){
     serviceRequest.send();
     serviceRequest.onload =  function() {
         var serviceData = JSON.parse(serviceRequest.responseText);
-        var service = serviceData["service"];
-        for (var t = 0; t < service[t]; t++) {
+        var type = serviceData["type"];
+        var price = serviceData["price"];
+        var allHTML = "";
+        for (var t = 0; t < type[t]; t++) {
              type = type[t];
         }
-        service = `<tr><th scope="col">${service}</th></tr>`;
+        for (var p = 0; p < price[p]; p++) {
+             price = price[p];
+            }
+        allHTML = `<li>${type}</li><li>${price}</li>`;
 
-        document.getElementById("service_info").innerHTML= service;
+        document.getElementById("service_info").innerHTML= allHTML;
     }
 }
 
 
 
-    
 
 
