@@ -4,20 +4,18 @@ function serviceHome(){
     serviceRequest.open('GET', serviceData, true);
     serviceRequest.send();
     serviceRequest.onload =  function() {
-        var serviceData = JSON.parse(serviceRequest.responseText);
-        var type = serviceData["type"];
-        var price = serviceData["price"];
-        var allHTML = "";
-        for (var t = 0; t < type[t]; t++) {
-             type = type[t];
+        var data = JSON.parse(serviceRequest.responseText);
+        var typeHTML = "";
+        var priceHTML ="";
+        for (var t = 0; t < data.length; t++) {
+             var type = data[t].type;
+             var price = data[t].price;
+        typeHTML = typeHTML + `<tr><td>${type}</td></tr>`;
+        priceHTML = priceHTML + `<tr><td>${price}</td></tr>`;
+        
         }
-        for (var p = 0; p < price[p]; p++) {
-             price = price[p];
-            }
-        allHTML = `<td id=${type}></td>
-                   <td id=${price}></td>`;
-
-        document.getElementById("service_info").innerHTML= allHTML;
+        document.getElementById("type_info").innerHTML= typeHTML;
+        document.getElementById("price_info").innerHTML= priceHTML;
     }
 }
 

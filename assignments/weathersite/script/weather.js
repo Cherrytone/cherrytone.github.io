@@ -34,6 +34,7 @@ cityRequest.onload =  function() {
             }
         }
         document.getElementById("town_info").innerHTML= townHTML;
+    console.log = townData;
     }
 }
 

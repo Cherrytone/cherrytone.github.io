@@ -2,7 +2,8 @@
 /*Orange-----#CA4B00
 Yellow/Tan---#CA8D00
 Green--------#009479
-Blue---------#0020A3  */
+Blue---------#0020A3
+Light Blue---#0881B2 */
 
 /*--------UNIVERSAL---------*/
 body {
@@ -112,7 +113,7 @@ nav {
     text-align: center;
 }
 #nav_tabs, footer {
-    background-color: #0020A3;
+    background-color: #0881B2;
     font-size: 25px;
     padding: 5px;
     font-family: 'Muli', sans-serif; 
@@ -126,7 +127,7 @@ nav {
 }
 .active {
     background-color: aliceblue;
-    color: #0020A3
+    color: #0881B2
 }
 .active:hover {
     color: aliceblue;
@@ -143,7 +144,7 @@ a.tabs.icon{
 /*------FOOTER-----------*/
 footer {
     color: aliceblue;
-    text-align: left;
+    text-align: center;
 }
 /*-----CONTACT PAGE------------*/
 h1 {
@@ -154,7 +155,7 @@ h1 {
     padding: 10px;
     text-align: center;
     color: aliceblue;
-    background-color: #0020A3;  
+    background-color: #0881B2;  
 }
 #info > label, #info > address {
     font-size: 30px;
@@ -231,7 +232,32 @@ legend{
 .bike_content:target {
     display: contents;
 }
-/*-----------------*/
+/*------SERVICE PAGE-----------*/
+.service_header {
+    text-align: center;
+}
+#quote {
+    font-size: 30px;
+    text-align: center;
+}
+table, th, td {
+    border: 1px solid #bbbbbb;
+    border-collapse: collapse;
+    font-family: Ubuntu, sans-serif;
+}
+table {
+    box-shadow: 8px 8px 15px #628ca6;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+tbody:nth-child(odd){
+    background-color: #e7ffed;
+}
+tr:nth-child(even){
+    background-color: #e7f0ed;
+}
 
 /*-----------------*/
 /*-----------------*/
