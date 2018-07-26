@@ -263,7 +263,8 @@ Light Blue---#0881B2 */
 /*------REGISTRATION PAGE-----------*/
 .reg_ul {
     color: #CA4B00;
-    font-size: 20px
+    font-size: 20px;
+    list-style: none;
 }
 /*------TOUR PAGE-----------*/
 .reg {
