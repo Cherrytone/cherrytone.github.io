@@ -1,14 +1,74 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width:600px) {
 /*--------UNIVERSAL---------*/
+    * {
+        max-width: 600px;
+    }
 /*-------LOGO----------*/
+    #logo {
+        max-width: 75%;
+        margin: auto;
+    }
 /*-------HEADER---------*/
+    .site_title {
+        font-size: 40px;
+    }
+    .site_title > h3 {
+        font-size: 20px;
+    }
 /*--------MAIN---------*/
-#sales {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-top: 10px;
-    margin-bottom: 20px;
-}
-/*------NAVICATION-------*/
-/*------FOOTER-----------*/
+    #sales, .top {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 10px;
+        margin-bottom: 20px;
+    }
+    .top {
+        text-align: center;
+    }
+    /*------NAVICATION-------*/
+    .nav_ul {
+        display: none;
+    }
+    .dropbtn {
+    background-color: #0881B2;
+    color: aliceblue;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    }
+
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: aliceblue;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: #2980B9;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown a:hover {
+        background-color: #0881B2;
+        color: aliceblue;
+    }
+
+    .show {display: block;}
+    /*------FOOTER-----------*/
 }

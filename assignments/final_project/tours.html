@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Tours through, The Mountain Spoke, a fictictious retail store for bike enthusiasts near Bozeman Montana">
         <link rel="stylesheet" href="style/normalize.css">
-        <link rel="stylesheet" href="style/small.css">
-        <link rel="stylesheet" href="style/medium.css">
         <link rel="stylesheet" href="style/large.css">
+        <link rel="stylesheet" href="style/medium.css">
+        <link rel="stylesheet" href="style/small.css">
         <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Archivo+Narrow|Balthazar|Bowlby+One+SC|Gravitas+One|Merriweather|Merriweather+Sans|Muli|Poller+One" rel="stylesheet">
         <title>Tours | The Mountain Spoke</title>
     </head>
@@ -19,6 +19,18 @@
             </div>
                     
             <nav id="nav_tabs" class="topnav">
+                <div class="dropdown">
+                    <button onclick="navDropdown()" class="dropbtn">Menu</button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="tours.html">Tours</a>
+                        <a href="products.html">Products</a>
+                        <a href="event.html">Events</a>
+                        <a href="service.html">Service</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="resources.html">Resources/Credits</a>
+                      </div>
+                </div>
                 <ul class="nav_ul">
                    <li><a class="tabs" href="index.html">Home</a></li>
                    <li><a class="tabs active" href="tours.html">Tours</a></li>
@@ -28,7 +40,6 @@
                    <li><a class="tabs" href="contact.html">Contact Us</a></li>
                    <li><a class="tabs" href="resources.html">Resources|Credits</a></li>
                    <li><img id="cart" src="images/icons/white_cart.png"></li>
-                   <li><a class="tabs icon" href="javascript:void(0);" onclick="myFunction()" class="fa fa-bars"></a></li>
                 </ul>
             </nav>
         </header>
@@ -64,6 +75,7 @@
         </footer>
         
     <script src="script/todaydate.js"></script>
+    <script src="script/nav_dropdown.js"></script>
         
     </body>
 </html>
