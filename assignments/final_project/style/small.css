@@ -1,8 +1,5 @@
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:800px) {
 /*--------UNIVERSAL---------*/
-    * {
-        max-width: 600px;
-    }
 /*-------LOGO----------*/
     #logo {
         max-width: 75%;
@@ -15,14 +12,58 @@
     .site_title > h3 {
         font-size: 20px;
     }
+    .header {
+        font-size: 30px;
+        text-shadow: 1px 1px black;
+    }
+     #cycle_link {
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    #cycle_link > a {
+        padding: 2px;
+        font-size: 8px;
+        background: #009479;
+        border-radius: 2px;
+    }
+    .register {
+        text-align: left;
+    }
 /*--------MAIN---------*/
+     main {
+        text-align: center;
+    }
     #sales, .top {
         display: grid;
         grid-template-columns: 1fr;
-        padding-top: 10px;
-        margin-bottom: 20px;
+        padding-top: 0px;
     }
     .top {
+        text-align: center;
+    }
+    #tours {
+        display: block;
+        padding-top: 1px; 
+    }
+    .tours,#sales, .top {
+        margin: 0px;
+    }
+    #sales {
+        padding: 0px;
+    }
+    .tour_img, .bike_img, site_image, #tour {
+        max-width: 360px;
+    }
+    .tour_header{
+        display: none;
+    }
+    .adventure {
+        background-image: none;
+        margin-bottom: 0px;
+    }
+    .fig_tour {
+        padding-left: 0px;
+        padding: 8px;
         text-align: center;
     }
     /*------NAVICATION-------*/

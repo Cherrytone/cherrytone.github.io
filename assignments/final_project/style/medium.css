@@ -1,8 +1,11 @@
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 401px) and (max-width: 800px) {
 /*--------UNIVERSAL---------*/
 /*-------LOGO----------*/
 /*-------HEADER---------*/
 /*--------MAIN---------*/
+    main {
+        text-align: center;
+    }
 /*------NAVICATION-------*/
 /*------FOOTER-----------*/
 }

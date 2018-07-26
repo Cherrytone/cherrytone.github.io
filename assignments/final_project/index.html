@@ -48,9 +48,13 @@
             <section class="register">
                 <div class="reg_label">
                     <label class="header reg_header">Register Now</label>
-                    <p id="cycle_link"><a href="events.html">Cycle the Continental Divide Annual Event</a></p>
+                    <p id="cycle_link"><a href="event.html">Cycle the Continental Divide Annual Event</a></p>
                 </div>
-                <img class="site_image" src="images/site_photos/mountain_forest_original.jpg" alt="snow capped mountains with forest and a valley lake reflecting the mountain">
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/site_photos/mountain_forest360px.jpg">
+                    <source media="(min-width: 601px) and (max-width: 800px)" srcset="images/site_photos/mountain_forest600px.jpg">
+                    <img class="site_image" src="images/site_photos/mountain_forest_original.jpg">
+                </picture>
             </section>
             <section id="sales">
                 <figure class="bike">
