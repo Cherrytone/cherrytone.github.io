@@ -98,7 +98,7 @@ Light Blue---#0881B2 */
     .bike, .bike_sales {
         margin: 0px;
     }
-    .bike,.tours, .bike_sales {
+    .bike,.tours {
         box-shadow: 0px 10px 50px;
     }
     .tours {
@@ -224,10 +224,6 @@ Light Blue---#0881B2 */
         display: none;
         padding: 10px;
         border: 2px solid #009479;
-    }
-    #sales_accordian {
-        max-width: 50%;
-        margin: auto;
     }
     .bike_sales {
         text-align: center;

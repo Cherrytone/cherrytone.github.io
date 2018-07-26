@@ -31,6 +31,7 @@
     }
     #cycle_link > a {
         padding: 2px;
+        font-size: 20px;
         background: #009479;
         border-radius: 2px;
     }
@@ -58,11 +59,8 @@
     #sales {
         padding: 0px;
     }
-    .tour_img, .bike_img, #tour {
+    .tour_img, .bike_img, #tour, .bike_sales {
         max-width: 360px;
-    }
-    .tour_header{
-        display: none;
     }
     .adventure {
         background-image: none;
@@ -72,6 +70,9 @@
         padding-left: 0px;
         padding: 8px;
         text-align: center;
+    }
+    ul{
+        list-style: none;
     }
     /*------NAVICATION-------*/
     .nav_ul {
