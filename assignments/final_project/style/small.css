@@ -12,9 +12,18 @@
     .site_title > h3 {
         font-size: 20px;
     }
+    .reg_label {
+        position: relative;
+        padding: 0px;
+    }
+    .site_image {
+        display: none:
+    }
     .header {
         font-size: 30px;
         text-shadow: 1px 1px black;
+        max-width: 100%;
+        margin: auto;
     }
      #cycle_link {
         margin-top: 10px;
@@ -22,12 +31,10 @@
     }
     #cycle_link > a {
         padding: 2px;
-        font-size: 8px;
         background: #009479;
         border-radius: 2px;
     }
     .register {
-        text-align: left;
     }
 /*--------MAIN---------*/
      main {
@@ -51,7 +58,7 @@
     #sales {
         padding: 0px;
     }
-    .tour_img, .bike_img, site_image, #tour {
+    .tour_img, .bike_img, #tour {
         max-width: 360px;
     }
     .tour_header{
