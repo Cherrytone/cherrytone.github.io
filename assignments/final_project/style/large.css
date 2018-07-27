@@ -259,11 +259,11 @@ tr:nth-child(even){
     background-color: #e7f0ed;
 }
 #table_s {
-    display: contents;
+    text-align: center;
 }
-#table_l {
-        display: none;
-    }
+#allHTML {
+    list-style-type: none;
+}
 /*-------NAV TRIAL----------*/
 
 /*------REGISTRATION PAGE-----------*/

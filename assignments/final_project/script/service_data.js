@@ -5,20 +5,16 @@ function serviceHome(){
     serviceRequest.send();
     serviceRequest.onload =  function() {
         var data = JSON.parse(serviceRequest.responseText);
-        var typeHTML = "";
-        var priceHTML ="";
+        var allHTML ="";
         for (var t = 0; t < data.length; t++) {
              var type = data[t].type;
              var price = data[t].price;
-        typeHTML = typeHTML + `<tr><td>${type}</td></tr>`;
-        priceHTML = priceHTML + `<tr><td>${price}</td></tr>`;
+        allHTML = allHTML + `<li class="reg_ul">${type}</li><li>${price}</li>`;
         
         }
-        document.getElementById("type_info").innerHTML= typeHTML;
-        document.getElementById("price_info").innerHTML= priceHTML;
+        document.getElementById("allHTML").innerHTML= allHTML;
     }
 }
-
 
 
 

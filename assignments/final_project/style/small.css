@@ -119,10 +119,4 @@
 
     .show {display: block;}
 }
-/*--------SERVICE PAGE------------*/
-#table_l {
-        display: contents;
-    }
-#table_s{
-    display: none;
-}
+
