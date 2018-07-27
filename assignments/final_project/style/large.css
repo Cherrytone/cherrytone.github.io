@@ -271,3 +271,6 @@ list-style: none;
 background-color: #0881B2;
 border: 3px outset #0881B2;
 }
+#video {
+    text-align: center;
+}
