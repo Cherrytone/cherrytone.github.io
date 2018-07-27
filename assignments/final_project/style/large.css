@@ -192,8 +192,6 @@ legend{
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
-
-/* Style the buttons inside the tab */
 .tab button {
     background-color: inherit;
     float: left;
@@ -204,18 +202,12 @@ legend{
     transition: 0.3s;
     font-size: 17px;
 }
-
-/* Change background color of buttons on hover */
 .tab button:hover {
     background-color: #ddd;
 }
-
-/* Create an active/current tablink class */
 .tab button.active {
     background-color: #ccc;
 }
-
-/* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
@@ -258,14 +250,16 @@ tbody:nth-child(odd){
 tr:nth-child(even){
     background-color: #e7f0ed;
 }
-#table_s {
+#table_s, #res_list {
     text-align: center;
+    line-height: 35px;
 }
-#allHTML {
+#allHTML, #res_list {
     list-style-type: none;
 }
-/*-------NAV TRIAL----------*/
-
+#table_s{
+    margin-top: 20px;
+}
 /*------REGISTRATION PAGE-----------*/
 .reg_ul {
 color: #CA4B00;
