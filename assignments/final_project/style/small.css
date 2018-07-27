@@ -1,5 +1,4 @@
 @media only screen and (max-width:800px) {
-/*--------UNIVERSAL---------*/
 /*-------LOGO----------*/
     #logo {
         max-width: 75%;
@@ -119,5 +118,11 @@
     }
 
     .show {display: block;}
-    /*------FOOTER-----------*/
+}
+/*--------SERVICE PAGE------------*/
+#table_l {
+        display: contents;
+    }
+#table_s{
+    display: none;
 }
